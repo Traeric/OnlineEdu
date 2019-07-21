@@ -73,6 +73,9 @@ resources/views/welcome.blade.php
 * 下载地址：https://packagist.org/packages/barryvdh/laravel-debugbar
 * 命令：composer require barryvdh/laravel-debugbar
 * 安装好后在config/app.php中添加providers和aliases数组的配置：
-![no img](./photos/7.png)
-![no img](./photos/8.png)
 
+![no img](./photos/7.png)
+
+![no img](./photos/8.png)
+# 4、后台基础功能
+后台登陆、退出、后台首页页面展示
