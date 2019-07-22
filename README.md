@@ -42,6 +42,7 @@ composer create-project laravel/laravel --prefer-dist ./
 ![no img](./photos/2.png)
 
 **③项目本地化操作**
+
 * 下载语言包：Laravel-lang
 * 下载地址：https://packagist.org/?query=laravel-lang
 * 命令：composer require caouecs/laravel-lang:~4.0
@@ -79,3 +80,8 @@ resources/views/welcome.blade.php
 ![no img](./photos/8.png)
 # 4、后台基础功能
 后台登陆、退出、后台首页页面展示
+
+**后台登陆页面**
+
+![no img](G:\OnlineEdu\photos\9.png)
+

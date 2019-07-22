@@ -14,7 +14,7 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
+        'guard' => 'web',    // 守门员名称
         'passwords' => 'users',
     ],
 
@@ -36,6 +36,12 @@ return [
     */
 
     'guards' => [
+        // 自定义后端guard
+        'admin' => [
+            'driver' => 'session',   // 以什么进行存储
+            'provider' => 'admin',
+        ],
+
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -69,6 +75,10 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
+        ],
+        'admin' => [
+            'driver' => 'eloquent',
+            'model' => App\Admin\Manager::class,
         ],
 
         // 'users' => [
