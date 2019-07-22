@@ -24,12 +24,16 @@ Route::group(['prefix' => 'admin'], function () {
 // 后台需要权限判断的路由
 Route::group([
     'prefix' => 'admin',
-//    'middleware' => 'auth',
+    'middleware' => 'auth:admin',
 ], function () {
     Route::get("/public/logout", "Admin\PublicController@logout")->name('admin_logout');
     // 后台管理首页
     Route::get("/index/index", "Admin\IndexController@index")->name("admin_index");
     // 管理员的管理模块
     Route::get("/manager/index", 'Admin\ManagerController@index')->name('manager_index');
+
+    // 权限管理模块
+    Route::get('/auth/index', 'Admin\AuthController@index')->name('auth_index');   // 展示权限
+    Route::any('/auth/add', 'Admin\AuthController@add')->name('auth_add');
 });
 

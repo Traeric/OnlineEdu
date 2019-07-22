@@ -32,7 +32,7 @@
                         class="Hui-iconfont">&#xe600;</i> 添加管理员</a> </span>
         <span class="r">共有数据：<strong>54</strong> 条</span>
     </div>
-    <table class="table table-border table-bordered table-bg">
+    <table id="table" class="table table-border table-bordered table-bg">
         <thead>
         <tr>
             <th scope="col" colspan="9">员工列表</th>
@@ -43,7 +43,7 @@
             <th width="150">登录名</th>
             <th width="90">手机</th>
             <th width="150">邮箱</th>
-            <th>角色</th>
+            <th width="100">角色</th>
             <th width="130">加入时间</th>
             <th width="100">是否已启用</th>
             <th width="100">操作</th>
@@ -58,7 +58,7 @@
                 <td>{{$val->username}}</td>
                 <td>{{$val->mobile}}</td>
                 <td>{{$val->email}}</td>
-                <td width="100px">{{$val->role_id}}</td>
+                <td>{{$val->role_id}}</td>
                 <td>{{$val->created_at}}</td>
                 <td class="td-status">
                     <!-- 判断账号的状态 -->
@@ -101,6 +101,17 @@
         $(function () {
             $("#admin_list").addClass('current');
             $("#manager").css('display', 'block');
+
+            // 实例化datatables插件
+            $('#table').dataTable({
+                // 禁用掉第一列的排序
+                "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0],
+                }],
+                // 指定初始化的时候按照哪一列进行排序
+                "aaSorting": [[1, "asc"]],
+            });
         });
         /*
             参数解释：
