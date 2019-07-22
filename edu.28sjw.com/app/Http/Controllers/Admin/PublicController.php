@@ -39,13 +39,12 @@ class PublicController extends Controller
             'password' => $data['password'],
             'status' => '2',   // 要求状态是启用的用户
         ], $request->get('remember'));
-
         // 验证成功
         if ($email_result or $mobile_result) {
             // 跳转到后台首页
             return redirect(route('admin_index'));
         } else {
-            // 重定向到页面
+            // 重定向到登陆页面
             return redirect(route('login'))->withErrors([
                 'loginError' => "账号或密码错误"
             ]);
