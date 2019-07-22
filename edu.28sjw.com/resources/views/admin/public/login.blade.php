@@ -1,84 +1,76 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <title>在线教育平台后台登陆页面</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8"/>
-
-    <!-- Bootstrap -->
-    <link href="/admin/css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="/admin/css/vendor/bootstrap-checkbox.css">
-
-    <link href="/admin/css/minimal.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link href="/admin/static/h-ui/css/H-ui.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/admin/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css"/>
+    <link href="/admin/static/h-ui.admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/admin/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css"/>
+    <title>在线直播平台后台登陆</title>
 </head>
-<body class="bg-1">
-
-
-<!-- Wrap all page content here -->
-<div id="wrap">
-    <!-- Make page fluid -->
-    <div class="row">
-        <!-- Page content -->
-        <div id="content" class="col-md-12 full-page login">
-
-
-            <div class="inside-block">
-                <img src="/admin/images/logo-big.png" alt class="logo">
-                <h1><strong>Welcome</strong> Stranger</h1>
-                <h5>在线教育平台后台登陆</h5>
-
-                <form id="form-signin" class="form-signin" action="{{route('admin_login_check')}}" method="post">
-                    {{csrf_field()}}
-                    <section>
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="account" placeholder="手机号码或邮箱">
-                            <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                        </div>
-                        <div class="input-group">
-                            <input type="password" class="form-control" name="password" placeholder="密码">
-                            <div class="input-group-addon"><i class="fa fa-key"></i></div>
-                        </div>
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="captcha" placeholder="验证码">
-                            <div class="input-group-addon" onclick="changeCaptcha()" style="cursor: pointer;">
-                                <img id="captcha_img" src="{{captcha_src()}}" alt="NO IMG" style="margin-top: 0;">
-                            </div>
-                        </div>
-                    </section>
-                    <section class="controls">
-                        <div class="checkbox check-transparent">
-                            <input type="checkbox" name="remember" value="1" id="remember">
-                            <label for="remember">一个月内免登录</label>
-                        </div>
-                        <a href="#">忘记密码?</a>
-                    </section>
-                    <section class="log-in">
-                        <button class="btn btn-greensea">登陆</button>
-                        <span>or</span>
-                        <button class="btn btn-slategray">创建账号</button>
-                    </section>
-                </form>
+<body>
+<input type="hidden" id="TenantId" name="TenantId" value=""/>
+<div class="header"></div>
+<div class="loginWraper">
+    <div id="loginform" class="loginBox">
+        <form class="form form-horizontal" action="{{route('admin_login_check')}}" method="post">
+            {{csrf_field()}}
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
+                <div class="formControls col-xs-8">
+                    <input name="account" type="text" placeholder="手机号或者邮箱" class="input-text size-L" required>
+                </div>
             </div>
-
-
-        </div>
-        <!-- /Page content -->
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
+                <div class="formControls col-xs-8">
+                    <input name="password" type="password" placeholder="密码" class="input-text size-L" required minlength="6">
+                </div>
+            </div>
+            <div class="row cl">
+                <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe63f;</i></label>
+                <div class="formControls col-xs-8">
+                    <input name="captcha" class="input-text size-L" type="text" placeholder="验证码" style="width:150px;" required maxlength="4">
+                    <img id="captcha_img" src="{{captcha_src()}}" alt="NO IMG">
+                    <a id="kanbuq" href="javascript:void(0);">看不清，换一张</a>
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="formControls col-xs-8 col-xs-offset-3">
+                    <label for="online">
+                        <input type="checkbox" name="remember" id="online" value="1">
+                        使我保持登录状态</label>
+                </div>
+            </div>
+            <div class="row cl">
+                <div class="formControls col-xs-8 col-xs-offset-3">
+                    <input type="submit" class="btn btn-success radius size-L"
+                           value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+                    <input type="reset" class="btn btn-default radius size-L"
+                           value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+                </div>
+            </div>
+        </form>
     </div>
 </div>
-<!-- Wrap all page content end -->
-<script src="/admin/js/jquery.js"></script>
-<script src="/admin/plugins/layer/layer.js"></script>
+<div class="footer">Copyright Eric Jin by 在线教育直播平台</div>
+
+<script type="text/javascript" src="/admin/lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/admin/static/h-ui/js/H-ui.js"></script>
+<script src="/admin/lib/layer/2.4/layer.js"></script>
 <script>
     $(function () {
-
+        let imgDom = $("#captcha_img");
+        let src = imgDom.attr('src');
+        $("#kanbuq").click(() => {
+            imgDom.attr('src', src + '&_=' + Math.random());
+        });
     });
-
-    let imgDom = $("#captcha_img");
-    let src = imgDom.attr('src');
-    function changeCaptcha() {
-        imgDom.attr('src', src + '&_=' + Math.random());
-    }
 
     // 以js弹窗形式输出错误内容
     @if (count($errors) > 0)
@@ -94,4 +86,3 @@
 </script>
 </body>
 </html>
-
