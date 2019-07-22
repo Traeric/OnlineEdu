@@ -83,5 +83,5 @@ resources/views/welcome.blade.php
 
 **后台登陆页面**
 
-![no img](G:\OnlineEdu\photos\9.png)
+![no img](./photos/9.png)
 
