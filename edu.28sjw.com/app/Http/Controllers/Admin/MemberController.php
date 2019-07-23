@@ -27,7 +27,7 @@ class MemberController extends Controller
                 'gender' => Input::get('gender'),
                 'mobile' => Input::get('mobile'),
                 'email' => Input::get('email'),
-                'avatar' => '/static/avatar.jpg',
+                'avatar' => Input::get('avatar'),
                 'country_id' => Input::get("country_id"),
                 'province_id' => Input::get("province_id"),
                 'city_id' => Input::get("city_id"),

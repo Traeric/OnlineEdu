@@ -12,6 +12,8 @@
     <link rel="stylesheet" type="text/css" href="/admin/lib/Hui-iconfont/1.0.8/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
     <link rel="stylesheet" type="text/css" href="/admin/static/h-ui.admin/css/style.css"/>
+    <!-- 导入webuploader -->
+    <link rel="stylesheet" href="/static/webuploader-0.1.5/webuploader.css">
     <title>添加会员用户</title>
 </head>
 <body>
@@ -60,6 +62,19 @@
             </div>
         </div>
         <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">头像：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <div id="uploader-demo">
+                    <!--用来存放item-->
+                    <div id="fileList" class="uploader-list">
+                        <!-- 添加隐藏域 -->
+                        <input type="hidden" name="avatar" value="">
+                    </div>
+                    <div id="filePicker">选择图片</div>
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>所属地区：</label>
             <!-- 国家 -->
             <div class="formControls col-xs-2 col-sm-2"> <span class="select-box">
@@ -93,12 +108,12 @@
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账号类型：</label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="radio-box">
-                    <input name="type" type="radio" id="sex-1" checked>
-                    <label for="sex-1">学生</label>
+                    <input name="type" type="radio" id="type-1" checked>
+                    <label for="type-1">学生</label>
                 </div>
                 <div class="radio-box">
-                    <input type="radio" id="sex-2" name="type">
-                    <label for="sex-2">老师</label>
+                    <input type="radio" id="type-2" name="type">
+                    <label for="type-2">老师</label>
                 </div>
             </div>
         </div>
@@ -106,12 +121,12 @@
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>账号状态：</label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="radio-box">
-                    <input name="status" type="radio" id="sex-1">
-                    <label for="sex-1">禁用</label>
+                    <input name="status" type="radio" id="status-1">
+                    <label for="status-1">禁用</label>
                 </div>
                 <div class="radio-box">
-                    <input type="radio" id="sex-2" name="status" checked>
-                    <label for="sex-2">启用</label>
+                    <input type="radio" id="status-2" name="status" checked>
+                    <label for="status-2">启用</label>
                 </div>
             </div>
         </div>
@@ -123,17 +138,17 @@
     </form>
 </article>
 
-<!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="/admin/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="/admin/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="/admin/static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="/admin/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="/admin/static/h-ui.admin/js/H-ui.admin.js"></script>
 
-<!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript" src="/admin/lib/My97DatePicker/4.8/WdatePicker.js"></script>
 <script type="text/javascript" src="/admin/lib/jquery.validation/1.14.0/jquery.validate.js"></script>
 <script type="text/javascript" src="/admin/lib/jquery.validation/1.14.0/validate-methods.js"></script>
 <script type="text/javascript" src="/admin/lib/jquery.validation/1.14.0/messages_zh.js"></script>
+<script src="/static/webuploader-0.1.5/webuploader.js"></script>
+<script src="/static/avatar.js"></script>
 <script type="text/javascript">
     $(function () {
         $('.skin-minimal input').iCheck({
@@ -171,20 +186,20 @@
             submitHandler: function (form) {
                 $(form).ajaxSubmit({
                     type: 'post',
-                    success: function(data){
+                    success: function (data) {
                         if (data) {
-                            layer.msg('添加成功!',{icon:1,time:2000}, () => {
+                            layer.msg('添加成功!', {icon: 1, time: 2000}, () => {
                                 let index = parent.layer.getFrameIndex(window.name);
                                 // parent.$('.btn-refresh').click();
                                 parent.window.location.reload();
                                 parent.layer.close(index);
                             });
                         } else {
-                            layer.msg('添加失败!',{icon:2,time:2000});
+                            layer.msg('添加失败!', {icon: 2, time: 2000});
                         }
                     },
-                    error: function(XmlHttpRequest, textStatus, errorThrown){
-                        layer.msg('error!',{icon:2,time:1000});
+                    error: function (XmlHttpRequest, textStatus, errorThrown) {
+                        layer.msg('error!', {icon: 2, time: 1000});
                     }
                 });
             }
@@ -259,6 +274,5 @@
         });
     });
 </script>
-<!--/请在上方写此页面业务相关的脚本-->
 </body>
 </html>
