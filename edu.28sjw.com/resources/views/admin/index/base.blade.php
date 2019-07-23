@@ -38,7 +38,7 @@
 
             <nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
                 <ul class="cl">
-                    <li>超级管理员</li>
+                    <li>{{\Illuminate\Support\Facades\Auth::guard('admin')->user()->role->role_name}}</li>
                     <li class="dropDown dropDown_hover">
                         <a href="#" class="dropDown_A">
                             {{\Illuminate\Support\Facades\Auth::guard('admin')->user()->username}}
@@ -130,8 +130,8 @@
             <dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd id="manager">
                 <ul>
-                    <li>
-                        <a href="admin-role.html" title="角色管理">角色管理</a>
+                    <li id="role_manager">
+                        <a href="{{route('role_index')}}" title="角色管理">角色管理</a>
                     </li>
                     <li id="auth_manager">
                         <a href="{{route('auth_index')}}" title="权限管理">权限管理</a>

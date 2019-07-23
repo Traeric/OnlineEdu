@@ -30,7 +30,6 @@
                                                                       onclick="admin_add('添加管理员','admin-add.html','800','500')"
                                                                       class="btn btn-primary radius"><i
                         class="Hui-iconfont">&#xe600;</i> 添加管理员</a> </span>
-        <span class="r">共有数据：<strong>54</strong> 条</span>
     </div>
     <table id="table" class="table table-border table-bordered table-bg">
         <thead>
@@ -58,7 +57,7 @@
                 <td>{{$val->username}}</td>
                 <td>{{$val->mobile}}</td>
                 <td>{{$val->email}}</td>
-                <td>{{$val->role_id}}</td>
+                <td>{{$val->role->role_name}}</td>
                 <td>{{$val->created_at}}</td>
                 <td class="td-status">
                     <!-- 判断账号的状态 -->

@@ -35,5 +35,9 @@ Route::group([
     // 权限管理模块
     Route::get('/auth/index', 'Admin\AuthController@index')->name('auth_index');   // 展示权限
     Route::any('/auth/add', 'Admin\AuthController@add')->name('auth_add');
+
+    // 角色管理模块
+    Route::get('/role/index', 'Admin\RoleController@index')->name('role_index');    // 展示角色
+    Route::any('/role/assign', 'Admin\RoleController@assign')->name('role_assign');
 });
 

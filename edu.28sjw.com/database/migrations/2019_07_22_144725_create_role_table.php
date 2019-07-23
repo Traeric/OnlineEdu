@@ -18,9 +18,9 @@ class CreateRoleTable extends Migration
             // 角色名称
             $table -> string('role_name',20)->nullable(false);
             // 权限id的集合
-            $table -> text('auth_ids');
+            $table -> text('auth_ids')->nullable(true);
             // 权限的控制器@方法
-            $table -> text('auth_ac');
+            $table -> text('auth_ac')->nullable(true);
         });
     }
 

@@ -35,29 +35,60 @@
                     <i class="Hui-iconfont">&#xe600;</i> 添加权限节点
                 </a>
             </span>
-            <span class="r">共有数据：<strong>54</strong> 条</span>
         </div>
         <table class="table table-border table-bordered table-bg">
             <thead>
             <tr>
-                <th scope="col" colspan="7">权限节点</th>
+                <th scope="col" colspan="8">权限节点</th>
             </tr>
             <tr class="text-c">
                 <th width="25"><input type="checkbox" name="" value=""></th>
                 <th width="40">ID</th>
                 <th width="200">权限名称</th>
-                <th>字段名</th>
+                <th width="200">控制器名</th>
+                <th width="200">方法名</th>
+                <th width="200">父级权限</th>
+                <th width="200">作为导航</th>
                 <th width="100">操作</th>
             </tr>
             </thead>
             <tbody>
+            @foreach($data as $val)
             <tr class="text-c">
-                <td><input type="checkbox" value="1" name=""></td>
-                <td>1</td>
-                <td>栏目添加</td>
-                <td></td>
+                <td><input type="checkbox" value="{{$val->id}}" name=""></td>
+                <td>{{$val->id}}</td>
+                <td>{{$val->auth_name}}</td>
+                <td>
+                    @if($val->controller)
+                        {{$val->controller}}
+                    @else
+                        N/A
+                    @endif
+                </td>
+                <td>
+                    @if($val->action)
+                        {{$val->action}}
+                    @else
+                        N/A
+                    @endif
+                </td>
+                <td>
+                    @if($val->parent_name)
+                        {{$val->parent_name}}
+                    @else
+                        顶级权限
+                    @endif
+                </td>
+                <td>
+                    @if($val->is_nav)
+                        <span class="label label-success radius">是</span>
+                    @else
+                        <span class="label radius">否</span>
+                    @endif
+                </td>
                 <td><a title="编辑" href="javascript:void(0);" onclick="admin_permission_edit('角色编辑','admin-permission-add.html','1','','310')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6df;</i></a> <a title="删除" href="javascript:;" onclick="admin_permission_del(this,'1')" class="ml-5" style="text-decoration:none"><i class="Hui-iconfont">&#xe6e2;</i></a></td>
             </tr>
+            @endforeach
             </tbody>
         </table>
     </div>
@@ -70,6 +101,17 @@
         $(function () {
             $("#auth_manager").addClass('current');
             $("#manager").css('display', 'block');
+
+            // 使用datatables实现分页
+            $('table').dataTable({
+                // 禁用掉第一列的排序
+                "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0],
+                }],
+                // 指定初始化的时候按照哪一列进行排序
+                "aaSorting": [[1, "asc"]],
+            });
         });
 
         /*
