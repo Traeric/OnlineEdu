@@ -19,7 +19,24 @@ class MemberController extends Controller
     public function add()
     {
         if (Input::method() == "POST") {
-
+            // 自动验证
+            // 添加数据
+            $result = Member::insert([
+                'username' => Input::get('username'),
+                'password' => bcrypt("123456"),
+                'gender' => Input::get('gender'),
+                'mobile' => Input::get('mobile'),
+                'email' => Input::get('email'),
+                'avatar' => '/static/avatar.jpg',
+                'country_id' => Input::get("country_id"),
+                'province_id' => Input::get("province_id"),
+                'city_id' => Input::get("city_id"),
+                'county_id' => Input::get("county_id"),
+                'type' => Input::get('type'),
+                'status' => Input::get('status'),
+                'created_at' => date("Y-m-d H:i:s"),
+            ]);
+            return $result ? '1' : '0';
         } else {
             // 四级联动，查询顶级的国家
             $countrys = DB::table('area')->where('pid', '0')->get();

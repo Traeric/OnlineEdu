@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="/admin/lib/Hui-iconfont/1.0.8/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="/admin/static/h-ui.admin/skin/default/skin.css" id="skin"/>
     <link rel="stylesheet" type="text/css" href="/admin/static/h-ui.admin/css/style.css"/>
-    <title>添加用户 - H-ui.admin v3.1</title>
+    <title>添加会员用户</title>
 </head>
 <body>
 <article class="page-container">
@@ -21,36 +21,42 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>用户名：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="username" name="username">
+                <input type="text" class="input-text" value="" placeholder="username" id="username" name="username">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>性别：
+            </label>
             <div class="formControls col-xs-8 col-sm-9 skin-minimal">
                 <div class="radio-box">
-                    <input name="sex" type="radio" id="sex-1" checked>
+                    <input name="gender" type="radio" id="sex-1" value="0">
                     <label for="sex-1">男</label>
                 </div>
                 <div class="radio-box">
-                    <input type="radio" id="sex-2" name="sex">
+                    <input type="radio" id="sex-2" name="gender" value="1">
                     <label for="sex-2">女</label>
                 </div>
                 <div class="radio-box">
-                    <input type="radio" id="sex-3" name="sex">
+                    <input type="radio" id="sex-3" name="gender" checked value="2">
                     <label for="sex-3">保密</label>
                 </div>
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>手机：</label>
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>手机：
+            </label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="mobile" name="mobile">
+                <input type="text" class="input-text" value="" placeholder="mobile" id="mobile" name="mobile">
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>邮箱：</label>
+            <label class="form-label col-xs-4 col-sm-3">
+                <span class="c-red">*</span>邮箱：
+            </label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" placeholder="@" name="email" id="email">
+                <input type="email" class="input-text" placeholder="email" name="email" id="email">
             </div>
         </div>
         <div class="row cl">
@@ -140,10 +146,8 @@
             rules: {
                 username: {
                     required: true,
-                    minlength: 2,
-                    maxlength: 16
                 },
-                sex: {
+                gender: {
                     required: true,
                 },
                 mobile: {
@@ -154,19 +158,35 @@
                     required: true,
                     email: true,
                 },
-                uploadfile: {
+                type: {
                     required: true,
                 },
-
+                status: {
+                    required: true,
+                },
             },
             onkeyup: false,
             focusCleanup: true,
             success: "valid",
             submitHandler: function (form) {
-                //$(form).ajaxSubmit();
-                var index = parent.layer.getFrameIndex(window.name);
-                //parent.$('.btn-refresh').click();
-                parent.layer.close(index);
+                $(form).ajaxSubmit({
+                    type: 'post',
+                    success: function(data){
+                        if (data) {
+                            layer.msg('添加成功!',{icon:1,time:2000}, () => {
+                                let index = parent.layer.getFrameIndex(window.name);
+                                // parent.$('.btn-refresh').click();
+                                parent.window.location.reload();
+                                parent.layer.close(index);
+                            });
+                        } else {
+                            layer.msg('添加失败!',{icon:2,time:2000});
+                        }
+                    },
+                    error: function(XmlHttpRequest, textStatus, errorThrown){
+                        layer.msg('error!',{icon:2,time:1000});
+                    }
+                });
             }
         });
 
