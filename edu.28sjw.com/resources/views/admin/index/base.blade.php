@@ -112,11 +112,17 @@
                 </ul>
             </dd>
         </dl>
+        <!-- 会员管理 -->
         <dl id="menu-member">
-            <dt><i class="Hui-iconfont">&#xe60d;</i> 会员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
+            <dt>
+                <i class="Hui-iconfont">&#xe60d;</i> 会员管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd id="member">
                 <ul>
-                    <li><a href="member-list.html" title="会员列表">会员列表</a></li>
+                    <li id="member_list">
+                        <a href="{{route('member_list')}}" title="会员列表">会员列表</a>
+                    </li>
                     <li><a href="member-del.html" title="删除的会员">删除的会员</a></li>
                     <li><a href="member-level.html" title="等级管理">等级管理</a></li>
                     <li><a href="member-scoreoperation.html" title="积分管理">积分管理</a></li>
@@ -126,6 +132,7 @@
                 </ul>
             </dd>
         </dl>
+        <!-- 管理员管理 -->
         <dl id="menu-admin">
             <dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd id="manager">
@@ -185,7 +192,7 @@
         </article>
 
         <footer class="footer">
-            <p>感谢jQuery、layer、laypage、Validform、UEditor、My97DatePicker、iconfont、Datatables、WebUploaded、icheck、highcharts、bootstrap-Switch<br> Copyright &copy;2015 H-ui.admin v3.0 All Rights Reserved.<br> 本后台系统由<a href="http://www.h-ui.net/" target="_blank" title="H-ui前端框架">H-ui前端框架</a>提供前端技术支持</p>
+            <p></p>
         </footer>
     </div>
 </section>

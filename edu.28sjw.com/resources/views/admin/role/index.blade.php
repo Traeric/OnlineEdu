@@ -25,6 +25,7 @@
                 <i class="Hui-iconfont">&#xe600;</i> 添加角色
             </a>
         </span>
+    </div>
     <div class="mt-10">
         <table class="table table-border table-bordered table-hover table-bg">
             <thead>
@@ -63,7 +64,7 @@
                             <i class="Hui-iconfont">&#xe6e2;</i>
                         </a>
                     </td>
-                </tr>s
+                </tr>
             @endforeach
             </tbody>
         </table>
@@ -79,6 +80,17 @@
         $(function () {
             $("#role_manager").addClass('current');
             $("#manager").css('display', 'block');
+
+            // 使用datatables实现分页
+            $('table').dataTable({
+                // 禁用掉第一列的排序
+                "aoColumnDefs": [{
+                    "bSortable": false,
+                    "aTargets": [0],
+                }],
+                // 指定初始化的时候按照哪一列进行排序
+                "aaSorting": [[1, "asc"]],
+            });
         });
 
 

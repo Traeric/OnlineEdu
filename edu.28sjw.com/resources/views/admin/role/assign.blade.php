@@ -27,7 +27,8 @@
                             <dl class="cl permission-list2">
                                 <dt>
                                     <label class="">
-                                        <input type="checkbox" value="{{$val->id}}" name="auth_id[]" id="user-Character-0-0">
+                                        <input type="checkbox" value="{{$val->id}}" name="auth_id[]"
+                                               @if(in_array($val->id, explode(',', $ids))) checked @endif>
                                         <b>{{$val->auth_name}}</b>
                                     </label>
                                 </dt>
@@ -35,7 +36,8 @@
                                     @foreach($cat as $v)
                                         @if($v->pid == $val->id)
                                             <label class="">
-                                                <input type="checkbox" value="{{$v->id}}" name="auth_id[]" id="user-Character-0-0-0">
+                                                <input type="checkbox" value="{{$v->id}}" name="auth_id[]"
+                                                       @if(in_array($val->id, explode(',', $ids))) checked @endif>
                                                 {{$v->auth_name}}
                                             </label>
                                         @endif

@@ -28,7 +28,9 @@ class RoleController extends Controller
             // 获取所有的权限，一级以及二级权限
             $top = Auth::where('pid', '0')->get();
             $cat = Auth::where('pid', '!=', '0')->get();
-            return view('admin.role.assign', compact('top', 'cat'));
+            // 查询当前角色拥有的权限
+            $ids = Role::where('id', Input::get('id'))->value('auth_ids');
+            return view('admin.role.assign', compact('top', 'cat', 'ids'));
         }
     }
 }
