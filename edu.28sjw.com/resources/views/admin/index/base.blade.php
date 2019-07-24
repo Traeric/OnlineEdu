@@ -77,19 +77,31 @@
 <!-- 右侧的导航栏 -->
 <aside class="Hui-aside">
     <div class="menu_dropdown bk_2">
+        <!-- 专业管理 -->
         <dl id="menu-article">
-            <dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
+            <dt>
+                <i class="Hui-iconfont">&#xe616;</i>
+                专业管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd id="project">
                 <ul>
-                    <li><a href="article-list.html" title="资讯管理">资讯管理</a></li>
+                    <li id="project_category"><a href="{{route('protype_list')}}" title="专业分类">专业分类</a></li>
+                    <li id="profession_list"><a href="{{route('profession_list')}}" title="专业列表">专业列表</a></li>
                 </ul>
             </dd>
         </dl>
+        <!-- 课程管理 -->
         <dl id="menu-picture">
-            <dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
+            <dt>
+                <i class="Hui-iconfont">&#xe626;</i>
+                课程管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd id="course">
                 <ul>
-                    <li><a href="picture-list.html" title="图片管理">图片管理</a></li>
+                    <li id="course_list"><a href="{{route('course_list')}}" title="课程列表">课程列表</a></li>
+                    <li id="course_play"><a href="{{route('lesson_list')}}" title="点播列表">点播列表</a></li>
                 </ul>
             </dd>
         </dl>

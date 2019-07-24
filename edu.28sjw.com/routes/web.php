@@ -48,7 +48,12 @@ Route::group([
     Route::get('/member/getareabyid', 'Admin\MemberController@getAreaById')->name("get_area");   // ajax四级联动
 
     // 专业分类与专业管理
-    Route::get('/protype/index', 'Admin\ProtypeController@index');
-    Route::get('/profession/index', 'Admin\ProfessionController@index');
+    Route::get('/protype/index', 'Admin\ProtypeController@index')->name('protype_list');
+    Route::get('/profession/index', 'Admin\ProfessionController@index')->name('profession_list');
+
+    // 课程与点播课程的管理
+    Route::get('/course/index', 'Admin\CourseController@index')->name('course_list');
+    Route::get('/lesson/index', 'Admin\LessonController@index')->name('lesson_list');
+    Route::get('/lesson/play', 'Admin\LessonController@play')->name('lesson_play');  // 播放视频
 });
 
