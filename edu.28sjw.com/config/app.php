@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         Mews\Captcha\CaptchaServiceProvider::class,
+        zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
         /*
          * Application Service Providers...
          */

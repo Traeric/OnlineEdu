@@ -44,6 +44,7 @@ Route::group([
     Route::get('/member/index', 'Admin\MemberController@index')->name('member_list');  // 展示列表
     Route::any('/member/add', 'Admin\MemberController@add')->name("member_add");   // 添加会员
     Route::post('/uploader/webuploader', 'Admin\UploaderController@webuploader');  // 异步上传头像
+    Route::post('/uploader/qiniu', 'Admin\UploaderController@qiniu');  // 将图片上传到七牛云服务去
     Route::get('/member/getareabyid', 'Admin\MemberController@getAreaById')->name("get_area");   // ajax四级联动
 });
 

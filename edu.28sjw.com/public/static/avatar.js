@@ -24,7 +24,8 @@ jQuery(function () {
         swf: '/static/webuploader-0.1.5/Uploader.swf',
 
         // 文件接收服务端。
-        server: '/admin/uploader/webuploader',
+        // server: '/admin/uploader/webuploader',   // 本地存储地址
+        server: '/admin/uploader/qiniu',   // 七牛云存储地址
 
         // 选择文件的按钮。可选。
         // 内部根据当前运行是创建，可能是input元素，也可能是flash.
