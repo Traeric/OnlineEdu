@@ -46,5 +46,9 @@ Route::group([
     Route::post('/uploader/webuploader', 'Admin\UploaderController@webuploader');  // 异步上传头像
     Route::post('/uploader/qiniu', 'Admin\UploaderController@qiniu');  // 将图片上传到七牛云服务去
     Route::get('/member/getareabyid', 'Admin\MemberController@getAreaById')->name("get_area");   // ajax四级联动
+
+    // 专业分类与专业管理
+    Route::get('/protype/index', 'Admin\ProtypeController@index');
+    Route::get('/profession/index', 'Admin\ProfessionController@index');
 });
 
