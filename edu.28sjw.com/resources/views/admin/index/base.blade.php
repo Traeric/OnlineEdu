@@ -105,13 +105,17 @@
                 </ul>
             </dd>
         </dl>
+        <!-- 试卷管理 -->
         <dl id="menu-product">
-            <dt><i class="Hui-iconfont">&#xe620;</i> 产品管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
+            <dt>
+                <i class="Hui-iconfont">&#xe72d;</i>
+                试卷试题管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd id="paper">
                 <ul>
-                    <li><a href="product-brand.html" title="品牌管理">品牌管理</a></li>
-                    <li><a href="product-category.html" title="分类管理">分类管理</a></li>
-                    <li><a href="product-list.html" title="产品管理">产品管理</a></li>
+                    <li id="paper_list"><a href="{{route('paper_list')}}" title="试卷管理">试卷管理</a></li>
+                    <li id="question_list"><a href="{{route('question_list')}}" title="试题管理">试题管理</a></li>
                 </ul>
             </dd>
         </dl>

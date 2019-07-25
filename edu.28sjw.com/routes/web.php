@@ -55,5 +55,11 @@ Route::group([
     Route::get('/course/index', 'Admin\CourseController@index')->name('course_list');
     Route::get('/lesson/index', 'Admin\LessonController@index')->name('lesson_list');
     Route::get('/lesson/play', 'Admin\LessonController@play')->name('lesson_play');  // 播放视频
+
+    // 试卷试题的管理
+    Route::get('/paper/index', 'Admin\PaperController@index')->name('paper_list');   // 试卷展示列表
+    Route::get('/question/index', 'Admin\QuestionController@index')->name('question_list');   // 试题展示列表
+    Route::get('/question/export', 'Admin\QuestionController@export')->name('question_export');   // 试题导出
+    Route::any('/question/import', 'Admin\QuestionController@import')->name('question_import');   // 试题导入
 });
 
