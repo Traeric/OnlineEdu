@@ -206,6 +206,11 @@
                 title: "查看选项",
             });
         }
+
+        /*用户-添加*/
+        function import_func(title, url, w, h) {
+            layer_show(title, url, w, h);
+        }
     </script>
 @endsection
 

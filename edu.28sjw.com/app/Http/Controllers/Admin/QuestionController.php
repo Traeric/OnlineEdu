@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Admin\Paper;
 use App\Admin\Question;
 use App\Http\Controllers\Controller;
 use Maatwebsite\Excel\Facades\Excel;
@@ -22,7 +23,7 @@ class QuestionController extends Controller
     public function export()
     {
         $cellData = [
-            ['序号', '题干', '所属试卷', '分值', '选项', '正确答案', '添加时间'],
+            ['序号', '题干', '所属试卷', '分值', '选项', '正确答案', '说明', '添加时间'],
         ];
         // 查询数据
         $data = Question::all();
@@ -34,6 +35,7 @@ class QuestionController extends Controller
                 $val->score,
                 $val->options,
                 $val->answer,
+                $val->remark,
                 $val->created_at,
             ];
         }
@@ -42,5 +44,16 @@ class QuestionController extends Controller
                 $sheet->rows($cellData);
             });
         })->export('xls');
+    }
+
+    /**
+     * 导入excel
+     */
+    public function import()
+    {
+        // 查询试卷的列表
+        $list = Paper::all();
+        // 展示视图
+        return view('admin.question.import', compact('list'));
     }
 }
