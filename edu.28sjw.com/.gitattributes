@@ -3,4 +3,4 @@
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-*.html linguist-language=python
+*.html linguist-language=php
