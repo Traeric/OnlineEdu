@@ -31,7 +31,7 @@
                    class="btn btn-success radius">
                     <i class="Hui-iconfont">&#xe644;</i> 导出
                 </a>
-                <a href="javascript:void(0);" onclick="import_func('导入','{{route("question_import")}}','','510')"
+                <a href="javascript:void(0);" onclick="import_func('导入','{{route("question_import")}}','500','260')"
                    class="btn btn-warning radius">
                     <i class="Hui-iconfont">&#xe645;</i> 导入
                 </a>

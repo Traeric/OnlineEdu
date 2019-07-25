@@ -22,7 +22,6 @@
         {{csrf_field()}}
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>所属地区：</label>
-            <!-- 国家 -->
             <div class="formControls col-xs-2 col-sm-2">
                 <span class="select-box" style="width: 220px;">
                     <select class="select" size="1" name="paper_id">
@@ -35,7 +34,7 @@
             </div>
         </div>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-3">导入文件：</label>
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>导入文件：</label>
             <div class="formControls col-xs-8 col-sm-9">
                 <div id="uploader-demo">
                     <!--用来存放item-->
@@ -75,6 +74,14 @@
         });
 
         $("#form-member-add").validate({
+            rules: {
+                paper_id: {
+                    required: true,
+                },
+                excel_path: {
+                    required: true,
+                },
+            },
             onkeyup: false,
             focusCleanup: true,
             success: "valid",

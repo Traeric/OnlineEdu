@@ -65,15 +65,16 @@ jQuery(function () {
     // 文件上传过程中创建进度条实时显示。
     uploader.on('uploadProgress', function (file, percentage) {
         var $li = $('#' + file.id),
-            $percent = $li.find('.progress span');
+            $percent = $li.find('.progress div.progress-bar');
 
         // 避免重复创建
         if (!$percent.length) {
-            $percent = $('<p class="progress"><span></span></p>')
-                .appendTo($li)
-                .find('span');
+            $percent = $('<div class="progress progress-striped active">' +
+                '<div class="progress-bar" role="progressbar" style="width: 0%;">' +
+                '</div>' +
+                '</div>').appendTo($li).find('.progress-bar');
         }
-
+        $li.find('p.state').text('上传中');
         $percent.css('width', percentage * 100 + '%');
     });
 
