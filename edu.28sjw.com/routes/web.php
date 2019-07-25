@@ -61,5 +61,10 @@ Route::group([
     Route::get('/question/index', 'Admin\QuestionController@index')->name('question_list');   // 试题展示列表
     Route::get('/question/export', 'Admin\QuestionController@export')->name('question_export');   // 试题导出
     Route::any('/question/import', 'Admin\QuestionController@import')->name('question_import');   // 试题导入
+
+    // 直播管理
+    Route::get('/live/index', 'Admin\LiveController@index')->name('live_list');
+    Route::get('/stream/index', 'Admin\StreamController@index')->name('stream_list');
+    Route::post('/stream/add', 'Admin\StreamController@add')->name('stream_add');
 });
 

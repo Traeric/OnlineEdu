@@ -119,12 +119,17 @@
                 </ul>
             </dd>
         </dl>
+        <!-- 直播管理 -->
         <dl id="menu-comments">
-            <dt><i class="Hui-iconfont">&#xe622;</i> 评论管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
-            <dd>
+            <dt>
+                <i class="Hui-iconfont">&#xe66f;</i>
+                直播管理
+                <i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i>
+            </dt>
+            <dd id="live">
                 <ul>
-                    <li><a href="http://h-ui.duoshuo.com/admin/" title="评论列表">评论列表</a></li>
-                    <li><a href="feedback-list.html" title="意见反馈">意见反馈</a></li>
+                    <li id="stream_list"><a href="{{route('stream_list')}}" title="直播流列表">直播流列表</a></li>
+                    <li id="live_list"><a href="{{route('live_list')}}" title="直播课程">直播课程</a></li>
                 </ul>
             </dd>
         </dl>
