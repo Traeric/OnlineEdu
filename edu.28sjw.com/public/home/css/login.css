@@ -1,0 +1,536 @@
+html,
+body {
+  font-family: 'Microsoft YaHei' !important;
+  font-size: 12px;
+  background-color: #f7f7f7;
+}
+body,
+html,
+p,
+ul,
+li,
+a,
+img {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+  outline: none;
+  border: none;
+}
+/*ȥ��IE���Զ����ֵ�С���*/
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+}
+input {
+  outline: none;
+  border: none;
+  font-family: "Microsoft YaHei";
+}
+.clearfix:after {
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: url("../img/bgImg.png");
+}
+.registerProtocal {
+  background-color: #ccc!important;
+  cursor: default;
+  pointer-events: none;
+}
+.rTips {
+  min-width: 200px;
+  height: 62px;
+  position: fixed;
+  padding: 0 10px;
+  z-index: 9999;
+  top: 40%;
+  left: 50%;
+  margin-left: -106px;
+  margin-top: -31px;
+  line-height: 62px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.5;
+  -o-opacity: 0.5;
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+.protocol-shadow {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  display: none;
+}
+.protocol-shadow .pay-protocol-text {
+  width: 580px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -324px;
+  margin-left: -290px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top {
+  font-size: 18px;
+  color: #333;
+  padding: 12px 20px;
+  height: 26px;
+  background-color: #fafafa;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top p {
+  float: left;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-top img {
+  float: right;
+  margin-top: 7px;
+  cursor: pointer;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content {
+  padding: 30px;
+  padding-top: 0;
+  height: 568px;
+  overflow: auto;
+  word-break: break-all;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  margin-top: 12px;
+  text-indent: 2px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content p:first-child {
+  margin-top: 27px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content .indent {
+  text-indent: 17px;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content span {
+  display: block;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content .youxiang {
+  color: #2cb82c;
+  display: inline-block;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content em {
+  font-style: normal;
+}
+.protocol-shadow .pay-protocol-text .pay-protocol-content h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin: 15px 0;
+}
+.wordHit {
+  margin: 3px 0;
+  position: absolute;
+  min-width: 117px;
+  height: 17px;
+  display: none;
+}
+.wordHit img {
+  margin-right: 5px;
+}
+.wordHit .HitWord {
+  font-size: 12px;
+  color: #ff4012;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -8px;
+}
+#loginBox .login-logImg {
+  width: 460px;
+  margin: 160px auto 0;
+  position: relative;
+}
+#loginBox .login-logImg .leftline,
+#loginBox .login-logImg .rightline {
+  width: 134px;
+  border-bottom: 1px solid #ddd;
+}
+#loginBox .login-logImg .logo {
+  position: absolute;
+  width: 152px;
+  height: 51px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#loginBox .login-logImg .leftline {
+  float: left;
+}
+#loginBox .login-logImg .rightline {
+  float: right;
+}
+#loginBox .login-changeTab {
+  width: 460px;
+  padding-bottom: 47px;
+  margin: 65px auto 0;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 2px 1px #e4e4e4;
+  -moz-box-shadow: 0px 0px 2px 2px #e4e4e4;
+  box-shadow: 0px 0px 2px 1px #e4e4e4;
+}
+#loginBox .login-changeTab .login-register-box .login-register .login-button,
+#loginBox .login-changeTab .login-register-box .login-register .register-button {
+  float: left;
+  width: 230px;
+  height: 70px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  line-height: 70px;
+  text-align: center;
+  color: #999;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .login-register .select {
+  background-color: #fff;
+  color: #333;
+}
+#loginBox .login-changeTab .login-register-box .login-content {
+  padding: 30px 75px 0;
+  display: block;
+  position: relative;
+}
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox {
+  position: relative;
+}
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .userName,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .userName,
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .password,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .password {
+  width: 310px;
+  height: 46px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  padding: 6px 12px;
+  color: #333;
+}
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .userNameClose,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .userNameClose,
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .passwordClose,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .passwordClose {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 18px;
+  display: none;
+  background: url("../img/delete.png") no-repeat center center;
+}
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .passwordClose,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .passwordClose {
+  top: 38px;
+}
+#loginBox .login-changeTab .login-register-box .login-content .usernameBox .password,
+#loginBox .login-changeTab .login-register-box .login-content .passwordBox .password {
+  margin-top: 20px;
+}
+#loginBox .login-changeTab .login-register-box .login-content .goLogin {
+  width: 310px;
+  height: 46px;
+  background-color: #2cb82c;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 46px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin: 40px 0 15px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .login-content .goLogin:hover {
+  background: #28A528;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways {
+  width: 310px;
+  margin-bottom: 40px;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .auto-login,
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .forgetPassword {
+  font-size: 14px;
+  color: #999;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .forgetPassword:hover {
+  color: #2cb82c;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .auto-login {
+  float: left;
+  line-height: 35px;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .auto-login .autoLoginSelect {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background: url("../img/noSelect.png") no-repeat;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .auto-login .autoLoginSelect.select {
+  background: url("../img/select.png") no-repeat;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .auto-login span {
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -14px;
+}
+#loginBox .login-changeTab .login-register-box .login-content .login-ways .forgetPassword {
+  float: right;
+  line-height: 26px;
+}
+#loginBox .login-changeTab .login-register-box .register-content {
+  padding: 30px 75px 0;
+  display: none;
+  position: relative;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode {
+  position: relative;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .RyonghuName,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .RyonghuName,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .RyonghuName,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .RyonghuName,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .Rusername,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .Rusername,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .Rusername,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .Rusername,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .Rpassword,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .Rpassword,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .Rpassword,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .Rpassword,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .InvitaCode,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .InvitaCode,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .InvitaCode,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .InvitaCode {
+  width: 310px;
+  height: 46px;
+  box-sizing: border-box;
+  background-color: #f6f6f6;
+  font-size: 14px;
+  padding: 6px 12px;
+  color: #333;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .RyonghuNameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .RyonghuNameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .RyonghuNameClose,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .RyonghuNameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .RusernameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .RusernameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .RusernameClose,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .RusernameClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .RpasswordClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .RpasswordClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .RpasswordClose,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .RpasswordClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .invitationCodeClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .invitationCodeClose,
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword .invitationCodeClose,
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode .invitationCodeClose {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 12px;
+  top: 19px;
+  display: none;
+  background: url("../img/delete.png") no-repeat center center;
+}
+#loginBox .login-changeTab .login-register-box .register-content .invitationCode,
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox {
+  margin-top: 20px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUsernameBox .cymyloginsuccess,
+#loginBox .login-changeTab .login-register-box .register-content .registerYonghunameBox .cymyloginsuccess {
+  background: url(../img/user-right.png) no-repeat center center;
+  display: none;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: 17px;
+  right: 12px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerPassword {
+  margin-top: 20px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code {
+  margin-top: 20px;
+  display: none;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code .verifCode {
+  float: left;
+  box-sizing: border-box;
+  width: 200px;
+  height: 46px;
+  padding: 6px 12px;
+  background-color: #f6f6f6;
+  font-size: 14px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code .wordHit {
+  top: 208px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code .btn-getcode {
+  float: right;
+  width: 105px;
+  height: 46px;
+  background-color: #2cb82c;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 46px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code .btn-getcode:hover {
+  background: #28A528;
+}
+#loginBox .login-changeTab .login-register-box .register-content .verification-code .enable {
+  pointer-events: none;
+  cursor: default;
+}
+#loginBox .login-changeTab .login-register-box .register-content .goRegister {
+  width: 310px;
+  height: 46px;
+  background-color: #2cb82c;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 46px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin: 40px 0 23px 0;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .register-content .goRegister:hover {
+  background: #28A528;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal {
+  margin-bottom: 45px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal .allowProtocal {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url("../img/select.png") no-repeat;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal span {
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -14px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal .allowProtocalUnderline {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -14px;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal .allowProtocalUnderline a {
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal .allowProtocalUnderline em {
+  font-style: normal;
+  font-size: 14px;
+  color: #999;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal .allowProtocalUnderline:hover em {
+  color: #2cb82c;
+}
+#loginBox .login-changeTab .login-register-box .register-content .registerUserProtocal a:hover {
+  text-decoration: underline;
+  color: #2cb82c;
+}
+#loginBox .login-changeTab .login-register-box .register-content .allowProtocal.select {
+  background: url("../img/noSelect.png") no-repeat;
+}
+#loginBox .login-changeTab .other-login-box {
+  width: 460px;
+}
+#loginBox .login-changeTab .other-login-box span {
+  font-size: 16px;
+  width: 460px;
+  color: #bbb;
+  text-align: center;
+  display: inline-block;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways {
+  width: 170px;
+  margin: 20px auto 0;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways .qq-login,
+#loginBox .login-changeTab .other-login-box .other-login-ways .weixin-login {
+  width: 60px;
+  height: 60px;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways .qq-login {
+  background: url("../img/QQ.png") no-repeat;
+  margin-right: 40px;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways .qq-login:hover {
+  background: url("../img/QQHover.png") no-repeat;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways .weixin-login {
+  background: url("../img/weixin.png") no-repeat;
+}
+#loginBox .login-changeTab .other-login-box .other-login-ways .weixin-login:hover {
+  background: url("../img/weixinHover.png") no-repeat;
+}

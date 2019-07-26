@@ -1,0 +1,488 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+  -ms-overflow-style: scrollbar;
+  /*浏览器提示*/
+  /*管理提示*/
+  /*登陆和注册*/
+}
+html input:-webkit-autofill,
+body input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f5f5f5 inset !important;
+}
+html ::-moz-placeholder,
+body ::-moz-placeholder {
+  color: #999;
+}
+html ::-webkit-input-placeholder,
+body ::-webkit-input-placeholder {
+  color: #999;
+}
+html :-ms-input-placeholder,
+body :-ms-input-placeholder {
+  color: #999;
+}
+html .login-module,
+body .login-module {
+  margin-top: 10%;
+}
+html .mask,
+body .mask {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99999;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  display: none;
+}
+html .browserBody,
+body .browserBody {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  min-width: 1200px;
+  z-index: 999;
+  height: 52px;
+  overflow: hidden;
+}
+html .browserBody .bcgop,
+body .browserBody .bcgop {
+  top: 0px;
+  width: 100%;
+  min-width: 1200px;
+  background: #2cb82c;
+  z-index: 999;
+  overflow: hidden;
+  position: absolute;
+  height: 52px;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+html .browserBody .browserBody-text,
+body .browserBody .browserBody-text {
+  width: 1200px;
+  margin: 0 auto;
+  height: 52px;
+  overflow: hidden;
+  position: absolute;
+}
+html .browserBody .browserBody-text p,
+body .browserBody .browserBody-text p {
+  float: left;
+  font-size: 14px !important;
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 52px;
+}
+html .browserBody .browserBody-text a,
+body .browserBody .browserBody-text a {
+  background-color: #ffffff;
+  color: #2cb82c;
+  margin-top: 10px;
+  width: 80px;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px !important;
+}
+html .browserBody .browserBody-text img,
+body .browserBody .browserBody-text img {
+  float: right;
+  margin-top: 18px;
+  cursor: pointer;
+  *margin-top: -21px;
+}
+html .guanliBody,
+body .guanliBody {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  min-width: 1200px;
+  z-index: 999;
+  height: 48px;
+  overflow: hidden;
+}
+html .guanliBody .glgop,
+body .guanliBody .glgop {
+  top: 0px;
+  width: 100%;
+  min-width: 1200px;
+  background: #ff4012;
+  z-index: 999;
+  overflow: hidden;
+  position: absolute;
+  height: 48px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+html .guanliBody .gl-text,
+body .guanliBody .gl-text {
+  width: 1200px;
+  margin: 0 auto;
+  height: 48px;
+  overflow: hidden;
+  z-index: 1000;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+}
+html .guanliBody .gl-text p,
+body .guanliBody .gl-text p {
+  font-size: 14px !important;
+  color: #ffffff;
+  line-height: 48px;
+  width: 100%;
+  text-align: center;
+}
+html .guanliBody .gl-text a,
+body .guanliBody .gl-text a {
+  background-color: #ffffff;
+  color: #2cb82c;
+  margin-top: 10px;
+  width: 80px;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px !important;
+}
+html .guanliBody .gl-text img,
+body .guanliBody .gl-text img {
+  float: right;
+  margin-top: 18px;
+  cursor: pointer;
+  *margin-top: -21px;
+}
+html header,
+body header {
+  background: white;
+  width: 100%;
+  height: 62px;
+  border-bottom: 1px solid #ebebeb;
+}
+html header .header_body,
+body header .header_body {
+  width: 1200px;
+  height: 61px;
+  margin: 0 auto;
+  position: relative;
+}
+html header .header_body .header_left,
+body header .header_body .header_left {
+  float: left;
+}
+html header .header_body .header_left > a,
+body header .header_body .header_left > a,
+html header .header_body .header_left div > a,
+body header .header_body .header_left div > a {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  float: left;
+  text-decoration: none;
+}
+html header .header_body .header_left > a em,
+body header .header_body .header_left > a em,
+html header .header_body .header_left div > a em,
+body header .header_body .header_left div > a em {
+  display: block;
+  width: 263px;
+  height: 44px;
+  margin: 16px 0;
+  background-image: url("../img/index.png");
+  background-position: -95px 0;
+  background-repeat: no-repeat;
+}
+html header .header_body .header_left a.select,
+body header .header_body .header_left a.select {
+  color: #2cb82c;
+  background: #fff;
+}
+html header .header_body .header_left .path a,
+body header .header_body .header_left .path a {
+  margin-right: 40px;
+}
+html header .header_body .header_left img,
+body header .header_body .header_left img {
+  display: inline-block;
+  margin: 12px 0px;
+}
+html header .header_body .header_left .path,
+body header .header_body .header_left .path {
+  float: right;
+  margin-left: 42px;
+  margin-top: 19px;
+}
+html header .header_body .header_left .path a,
+body header .header_body .header_left .path a {
+  background: #fff;
+}
+html header .header_body .header_left .path a:hover,
+body header .header_body .header_left .path a:hover {
+  color: #2CB82C;
+}
+html header .header_body .header_right,
+body header .header_body .header_right {
+  float: right;
+  height: 61px;
+  line-height: 61px;
+  font-size: 14px;
+  /*a:nth-child(2){
+          margin-left:46px;
+          margin-right:24px;
+        }*/
+}
+html header .header_body .header_right input,
+body header .header_body .header_right input {
+  padding: 0 16px;
+  width: 160px;
+  height: 34px;
+  border-radius: 18px;
+  border: 1px solid #e4e4e4;
+}
+html header .header_body .header_right a,
+body header .header_body .header_right a {
+  font-size: 14px;
+  color: #333;
+}
+html header .header_body .header_right .studentCenterBox,
+body header .header_body .header_right .studentCenterBox {
+  margin-right: 40px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+html header .header_body .header_right .studentCenterBox:hover,
+body header .header_body .header_right .studentCenterBox:hover {
+  color: #2cb82c;
+  text-decoration: none;
+}
+html header .header_body .header_right .studentCenterBox.select,
+body header .header_body .header_right .studentCenterBox.select {
+  color: #2cb82c;
+}
+html .hr,
+body .hr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12);
+  -ms-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.12);
+}
+html .loginGroup,
+body .loginGroup {
+  display: inline-block;
+  height: 71px;
+  margin-top: -4px;
+  padding: 5px 0;
+  margin-left: 0;
+  font-size: 12px;
+  cursor: default;
+  vertical-align: top;
+}
+html .loginGroup .login,
+body .loginGroup .login {
+  padding-top: 10px;
+  position: relative;
+  display: none;
+  cursor: default;
+}
+html .loginGroup .login .userPic,
+body .loginGroup .login .userPic {
+  width: 40px;
+  height: 40px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 3px;
+  cursor: default;
+}
+html .loginGroup .login .dropdown,
+body .loginGroup .login .dropdown {
+  z-index: 3;
+  max-width: 120px;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 46px;
+  float: right;
+}
+html .loginGroup .login .dropdown #dLabel,
+body .loginGroup .login .dropdown #dLabel {
+  max-width: 85px;
+  min-width: 0;
+  overflow: hidden;
+  height: 50px;
+  float: right;
+  cursor: default;
+}
+html .loginGroup .login .dropdown #dLabel .name,
+body .loginGroup .login .dropdown #dLabel .name {
+  max-width: 60px;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  height: 45px;
+  text-align: right;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+html .loginGroup .login .dropdown #dLabel .select,
+body .loginGroup .login .dropdown #dLabel .select {
+  color: #2cb82c;
+}
+html .loginGroup .login .dropdown #dLabel .caret,
+body .loginGroup .login .dropdown #dLabel .caret {
+  cursor: default;
+  display: inline-block;
+  vertical-align: middle;
+  top: -17px;
+  position: relative;
+  -webkit-user-select: none;
+}
+html .loginGroup .login .dropdown #dLabel .select1,
+body .loginGroup .login .dropdown #dLabel .select1 {
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+  color: #2cb82c;
+  display: inline-block;
+  vertical-align: middle;
+  /*border-top: 4px dashed;
+            border-top: 4px solid \9;*/
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  border-top: 0px dashed;
+}
+html .loginGroup .login .dropdown .dropdownmenu,
+body .loginGroup .login .dropdown .dropdownmenu {
+  top: 48px;
+  right: 0px;
+  width: 0px;
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 140px;
+  padding: 17px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.12);
+}
+html .loginGroup .login .dropdown .dropdownmenu li,
+body .loginGroup .login .dropdown .dropdownmenu li {
+  width: auto;
+  display: block;
+  padding: 0 20px;
+  height: 38px;
+  line-height: 38px;
+}
+html .loginGroup .login .dropdown .dropdownmenu li a,
+body .loginGroup .login .dropdown .dropdownmenu li a {
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  height: 38px;
+  line-height: 38px;
+}
+html .loginGroup .login .dropdown .dropdownmenu li i,
+body .loginGroup .login .dropdown .dropdownmenu li i {
+  width: 17px;
+  font-size: 14px;
+  color: #ccc;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: -2px;
+  height: 38px;
+  line-height: 38px;
+}
+html .loginGroup .login .dropdown .dropdownmenu li:hover,
+body .loginGroup .login .dropdown .dropdownmenu li:hover,
+html .loginGroup .login .dropdown .dropdownmenu li:hover a,
+body .loginGroup .login .dropdown .dropdownmenu li:hover a {
+  background-color: #2cb82c;
+  color: #fff;
+}
+html .loginGroup .login .dropdown .dropdownmenu li:hover i,
+body .loginGroup .login .dropdown .dropdownmenu li:hover i,
+html .loginGroup .login .dropdown .dropdownmenu a,
+body .loginGroup .login .dropdown .dropdownmenu a {
+  color: #fff;
+}
+html .loginGroup .login .dropdown:hover .dropdownmenu,
+body .loginGroup .login .dropdown:hover .dropdownmenu {
+  display: block;
+}
+html .loginGroup .logout,
+body .loginGroup .logout {
+  height: 18px;
+  display: block;
+}
+html .loginGroup .logout a,
+body .loginGroup .logout a {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  line-height: 61px;
+}
+html .loginGroup .logout .btn-link,
+body .loginGroup .logout .btn-link {
+  display: inline-block;
+}
+html .loginGroup .logout .btn-link.btn-login,
+body .loginGroup .logout .btn-link.btn-login {
+  color: #333333;
+  padding: 0 5px;
+  font-size: 14px;
+  display: inline-block;
+}
+html .loginGroup .logout .btn-link.btn-register,
+body .loginGroup .logout .btn-link.btn-register {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #333333;
+  display: inline-block;
+}
+html .loginGroup .logout .btn-link.btn-login:hover,
+body .loginGroup .logout .btn-link.btn-login:hover {
+  color: #2cb82c;
+}
+html .loginGroup .logout .btn-link.btn-register:hover,
+body .loginGroup .logout .btn-link.btn-register:hover {
+  color: #2cb82c;
+}
+html .loginGroup .logout .line,
+body .loginGroup .logout .line {
+  color: #CCCCCC;
+  height: 12px;
+}

@@ -1,0 +1,1335 @@
+html,
+body {
+  width: 100%;
+  background: #F7F7F7;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+p,
+ul,
+ol {
+  margin: 0;
+}
+.kecheng {
+  display: block!important;
+}
+.personBack {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+.personBack .personMess {
+  width: 572px;
+  padding-bottom: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background: #fff;
+}
+.personBack .personMess .kecheng .warn a {
+  display: inline;
+  color: #2CB82C;
+  margin: 0 5px;
+  border-bottom: 1px solid #fff;
+}
+.personBack .personMess .kecheng .warn a:hover {
+  border-bottom: 1px solid #2CB82C;
+}
+.personBack .personMess .title {
+  padding: 0 20px;
+  line-height: 52px;
+  background: #FAFAFA;
+  color: #333;
+  font-size: 18px;
+}
+.personBack .personMess .red {
+  line-height: 23px;
+  font-style: normal;
+  vertical-align: middle;
+}
+.personBack .personMess #rq_province {
+  margin-left: 3px;
+  width: 118px;
+  background-position: 98px 15px;
+}
+.personBack .personMess #rq_city {
+  width: 118px;
+  background-position: 98px 15px;
+}
+.personBack .personMess #rq_college {
+  width: 118px;
+  background-position: 98px 15px;
+}
+.personBack .personMess #rqsxl {
+  margin-left: 3px;
+  width: 118px;
+}
+.personBack .personMess #rqcxl {
+  width: 118px;
+  left: 141px;
+}
+.personBack .personMess #rqdxxl {
+  width: 118px;
+  left: 280px;
+}
+.personBack .personMess .a000 {
+  padding-top: 10px;
+}
+.emptyHit,
+.emptyHit1 {
+  display: none;
+  width: 150px;
+  float: left;
+  margin-left: 2px;
+  font-size: 12px;
+  color: #FF4012;
+  margin-top: 2px;
+}
+.emptyHit i,
+.emptyHit1 i {
+  font-size: 12px;
+  color: #FF4012;
+  display: inline-block;
+  margin-right: 5px;
+}
+.pages {
+  margin-bottom: 0;
+}
+.pinglunPage {
+  margin: 0 auto;
+  background-color: #fafafa;
+  text-align: center;
+}
+.pinglunPage .shangyiye,
+.pinglunPage .zhongjianye,
+.pinglunPage .xiayiye {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.pinglunPage .shangyiye {
+  margin-right: 17px;
+}
+.pinglunPage .shangyiye,
+.pinglunPage .xiayiye {
+  font-size: 12px;
+  color: #999;
+}
+.pinglunPage .zhongjianye a {
+  font-size: 14px;
+  font-family: Arial;
+  color: #999;
+  margin-right: 17px;
+}
+.pinglunPage .zhongjianye span {
+  font-size: 14px;
+  font-family: Arial;
+  color: #999;
+  margin: 0 20px !important;
+}
+.pinglunPage .current {
+  color: #2cb82c !important;
+}
+.opened {
+  height: auto !important;
+}
+.toggle .opens {
+  color: #2CB82C !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.toggle:hover {
+  text-decoration: underline !important;
+}
+.toggle .closes,
+.opened .toggle .opens {
+  display: none;
+  color: #2CB82C !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.toggle .opened,
+.opened .toggle .closes {
+  display: inline;
+  color: #2CB82C;
+  font-size: 13px;
+  text-decoration: none;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .bread {
+  display: block;
+  font-size: 12px;
+  margin: 15px 0;
+  color: #999;
+}
+.content .bread i {
+  font-style: normal;
+}
+.content .bread a {
+  color: #999;
+}
+.content .bread a:hover {
+  color: #2CB82C;
+}
+.content .course-mess {
+  padding: 30px 30px 10px;
+  background: #fff;
+}
+.content .course-mess .mess-left {
+  max-width: 706px;
+  float: left;
+}
+.content .course-mess .mess-left .mess-title {
+  font-size: 18px;
+  color: #333;
+}
+.content .course-mess .mess-left .mess-con {
+  font-size: 14px;
+  color: #666;
+  line-height: 22px;
+  margin-top: 8px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.content .course-mess .mess-right {
+  float: left;
+  margin-left: 60px;
+  color: #666;
+  font-size: 14px;
+}
+.content .course-mess .mess-right .right1 {
+  float: right;
+  text-align: center;
+}
+.content .course-mess .mess-right .right2 {
+  float: right;
+  text-align: center;
+  margin-right: 50px;
+}
+.content .course-range {
+  background: #fff;
+  padding: 30px 0;
+}
+.content .course-range .l1 {
+  width: 82px;
+  height: 82px;
+  background: url("../images/zhiboCourse/icon01.png") #ffffff no-repeat center center;
+  border-radius: 41px;
+  box-shadow: 0 0 20px 8px #e6eff8;
+  float: left;
+  margin-left: 186px;
+}
+.content .course-range .l2 {
+  width: 580px;
+  height: 8px;
+  border-radius: 4px;
+  background: #eee;
+  float: left;
+  margin-left: 30px;
+  margin-top: 37px;
+}
+.content .course-range .l2 .blue {
+  position: relative;
+  display: block;
+  height: 8px;
+  border-radius: 4px;
+  background: #5faaf7;
+}
+.content .course-range .l2 .blue .range {
+  position: absolute;
+  right: -18px;
+  top: -18px;
+  z-index: 9;
+}
+.content .course-range .l2 .blue .sanjiao {
+  position: absolute;
+  top: -17px;
+  right: -1px;
+}
+.content .course-range .l2 .blue .xuanfu {
+  position: absolute;
+  top: -40px;
+  right: -16px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  padding: 3px;
+  z-index: 15;
+  background: #555d67;
+  min-width: 40px;
+}
+.content .course-range .l2 .tip {
+  text-align: center;
+  color: #333;
+  font-size: 14px;
+  margin-top: 20px;
+}
+.content .course-range .l3 {
+  float: left;
+  margin-left: 30px;
+  width: 106px;
+  height: 44px;
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  background: #5FAAF7;
+  font-size: 14px;
+  border-radius: 2px;
+  margin-top: 19px;
+  display: block;
+}
+.content .course-range .l3:hover {
+  background: #5295da;
+}
+.content .course-range .stop {
+  background: #ccc!important;
+  cursor: default!important;
+}
+.content .course-nav {
+  margin-top: 20px;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  display: block;
+  padding: 0 30px;
+  clear: both;
+  box-shadow: 0 1px 6px 1px #ececec;
+  border-bottom: 1px solid #E4E4E4;
+}
+.content .course-nav ul {
+  height: 59px;
+}
+.content .course-nav li {
+  height: 100%;
+  float: left;
+}
+.content .course-nav li a {
+  color: #333;
+  padding: 0 15px;
+  height: 60px;
+  margin-right: 20px;
+}
+.content .course-nav .jihua {
+  display: none;
+}
+.content .course-nav .active a {
+  color: #2CB82C;
+  border-bottom: 1px solid #2CB82C;
+}
+.content .course-main {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+}
+.content .course-main .main {
+  background: url("../images/zhiboCourse/course-bg.png") repeat-y left top;
+  width: 100%;
+  position: relative;
+  display: none;
+}
+.content .course-main .main .main-left {
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 281px;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  max-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.content .course-main .main .main-left .allvideo li {
+  padding-left: 30px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+}
+.content .course-main .main .main-left .allvideo li a {
+  color: #333;
+  max-width: 222px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  font-size: 14px;
+}
+.content .course-main .main .main-left .allvideo li span {
+  display: block;
+  float: left;
+  margin-left: 10px;
+}
+.content .course-main .main .main-left .allvideo .active {
+  background: #2CB82C;
+  color: #fff;
+}
+.content .course-main .main .main-left .allvideo .active a {
+  color: #fff;
+}
+.content .course-main .main .main-left .allinfo .hide {
+  display: none!important;
+}
+.content .course-main .main .main-left .allinfo .unact > span {
+  top: 13px!important;
+  transform: rotateZ(0deg) !important;
+  -webkit-transform: rotateZ(0deg) !important;
+  -ms-transform: rotateZ(0deg) !important;
+  -moz-transform: rotateZ(0deg) !important;
+}
+.content .course-main .main .main-left .allinfo .act {
+  display: block;
+}
+.content .course-main .main .main-left .allinfo .act > span {
+  top: 18px!important;
+  -webkit-transform: rotateZ(45deg) !important;
+  -ms-transform: rotateZ(45deg) !important;
+  -moz-transform: rotateZ(45deg) !important;
+  transform: rotateZ(45deg) !important;
+}
+.content .course-main .main .main-left .allinfo .info1-name {
+  padding-left: 40px;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  position: relative;
+  clear: both;
+  max-width: 280px;
+  white-space: nowrap;
+  padding-right: 25px;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  overflow: hidden;
+}
+.content .course-main .main .main-left .allinfo .info1-name span {
+  left: 25px;
+  top: 13px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: #999;
+  position: absolute;
+}
+.content .course-main .main .main-left .allinfo .info1 {
+  line-height: 36px;
+  cursor: pointer;
+  position: relative;
+}
+.content .course-main .main .main-left .allinfo .info1 span {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: #999;
+  position: absolute;
+  left: 40px;
+  top: 13px;
+}
+.content .course-main .main .main-left .allinfo .info1 .info2-name {
+  padding-left: 55px;
+  padding-right: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  position: relative;
+}
+.content .course-main .main .main-left .allinfo .info1 .info3-name {
+  padding-left: 70px;
+  padding-right: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  position: relative;
+  font-size: 12px;
+}
+.content .course-main .main .main-left .allinfo .info1 .info3-name span {
+  left: 60px;
+}
+.content .course-main .main .main-left .allinfo .info1 .info2 {
+  padding-left: 70px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  cursor: pointer;
+  padding-right: 25px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 12px;
+  position: relative;
+}
+.content .course-main .main .main-left .allinfo .info1 .info2:hover {
+  background: #2CB82C;
+  color: #fff;
+}
+.content .course-main .main .main-left .allinfo .info1 .active {
+  background: #2CB82C;
+  color: #fff;
+}
+.content .course-main .main .main-right {
+  float: right;
+  padding: 30px 40px 50px;
+  width: 920px;
+  min-height: 500px;
+}
+.content .course-main .main .main-right .con-wait {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0 20px;
+  margin-left: -48px;
+  margin-top: -22px;
+}
+.content .course-main .main .main-right .con-wait .loadingWord {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #333;
+  width: 37px;
+  margin-top: 5px;
+}
+.content .course-main .main .main-right .page-no-result {
+  display: none;
+  margin-top: 100px!important;
+}
+.content .course-main .main .main-right .main-video {
+  display: block;
+}
+.content .course-main .main .main-right .main-video .right-nav {
+  text-align: right;
+  color: #333;
+  font-size: 14px;
+}
+.content .course-main .main .main-right .main-video .right-nav div {
+  float: left;
+  margin-right: 26px;
+}
+.content .course-main .main .main-right .main-video .right-nav span {
+  float: right;
+  margin-right: 26px;
+}
+.content .course-main .main .main-right .main-video .right-nav .iconfont {
+  font-size: 14px;
+  margin-right: 5px;
+  color: #ccc;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav0 {
+  margin-right: 0;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav0 .iconfont {
+  color: #ccc;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav1 .iconfont {
+  color: #ccc;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav2 .iconfont {
+  color: #FF4012;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav2 .iconfont {
+  color: #FF4012;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav3 .iconfont {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-video .right-nav .nav3 .iconfont {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-video .right-con {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+.content .course-main .main .main-right .main-video .right-con .con1 {
+  overflow: hidden;
+  margin-top: 20px;
+  clear: both;
+  border: 1px solid #eee;
+}
+.content .course-main .main .main-right .main-video .right-con .con1 .kai {
+  background: #fafafa;
+  line-height: 26px;
+  font-size: 12px;
+  color: #333;
+}
+.content .course-main .main .main-right .main-video .right-con .con1 .kai a {
+  float: right;
+  margin-right: 20px;
+  color: #333;
+  background: url("../images/zhiboCourse/detail_down.png") #fafafa no-repeat right center;
+  padding-right: 15px;
+}
+.content .course-main .main .main-right .main-video .right-con .con1 .guan {
+  background: #fafafa;
+  line-height: 26px;
+  font-size: 12px;
+  color: #333;
+}
+.content .course-main .main .main-right .main-video .right-con .con1 .guan a {
+  float: right;
+  margin-right: 20px;
+  color: #333;
+  background: url("../images/zhiboCourse/detail_up.png") #fafafa no-repeat right center;
+  padding-right: 15px;
+}
+.content .course-main .main .main-right .main-video .right-con .con-title {
+  line-height: 46px;
+  background: #FAFAFA;
+  padding: 0 20px;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll {
+  display: block;
+  overflow: hidden;
+  width: 110%;
+  max-height: 225px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia {
+  margin-bottom: -1px;
+  overflow: hidden;
+  float: left;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  height: 46px;
+  width: 420px;
+  line-height: 46px;
+  padding-left: 20px;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng .iconfont,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .iconfont {
+  font-size: 14px;
+  color: #ccc;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng span,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia span {
+  color: #333;
+  font-size: 14px;
+  width: 340px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  float: left;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng span i,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia span i {
+  margin-right: 10px;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng .tb,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .tb,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng .lock,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .lock {
+  float: right;
+  margin-right: 10px;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng em,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia em {
+  font-style: normal;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng .tongguo,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .tongguo {
+  display: block;
+  -moz-transform: rotateX(-30deg);
+  -webkit-transform: rotateX(-30deg);
+  -ms-transform: rotateX(-30deg);
+  transform: rotate(-30deg);
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng .tongguo img,
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .tongguo img {
+  width: 40px;
+  height: 18px;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng:hover {
+  background-color: #fafafa;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng:hover span {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .kecheng:hover span .iconfont {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia {
+  background: #f0f6f9;
+  color: #5faaf7;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia span {
+  color: #5faaf7;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .guanqia .iconfont {
+  color: #5faaf7;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .studying .tb {
+  color: #FF4012;
+}
+.content .course-main .main .main-right .main-video .right-con .kechengAll .studyed .tb {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-ppt {
+  display: none;
+}
+.content .course-main .main .main-right .main-ppt .right-ppt {
+  color: #333;
+  font-size: 14px;
+}
+.content .course-main .main .main-right .main-ppt .right-ppt span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-ppt .right-ppt span:first-child {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.content .course-main .main .main-right .main-ppt .right-ppt i {
+  font-style: normal;
+  color: #EEEEEE;
+}
+.content .course-main .main .main-right .main-ppt .right-ppt .act {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-ppt .right-con {
+  display: block;
+  min-height: 300px;
+  position: relative;
+  margin-top: 30px;
+}
+.content .course-main .main .main-right .main-note {
+  display: none;
+}
+.content .course-main .main .main-right .main-note .right-note {
+  color: #333;
+  font-size: 14px;
+}
+.content .course-main .main .main-right .main-note .right-note span {
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-note .right-note span:first-child {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.content .course-main .main .main-right .main-note .right-note i {
+  font-style: normal;
+  color: #EEEEEE;
+}
+.content .course-main .main .main-right .main-note .right-note .act {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-note .right-con {
+  display: block;
+  min-height: 300px;
+  position: relative;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo {
+  padding: 17px 0;
+  border-bottom: 1px solid #eee;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteImg {
+  float: left;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteImg img {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteImg .note-username {
+  width: 47px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  margin-top: 5px;
+  text-align: center;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent {
+  float: right;
+  width: 760px;
+  position: relative;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .note-title {
+  font-size: 14px;
+  color: #333;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .note-content {
+  line-height: 22px;
+  font-size: 12px;
+  color: #666;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others {
+  margin-top: 5px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others > span {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others > span i {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others > span i.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .noteHitZan,
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .rightPinglun,
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .rightShoucang,
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .rightShanchu {
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .noteHitZan i {
+  margin-top: -5px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .praise_Count.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .rightShoucang i {
+  margin-top: -2px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .rightPinglun i {
+  margin-top: 1px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .noteHitZan.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .shoucang.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .right-note-others .noteHitZan i.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox {
+  width: 775px;
+  margin-top: 8px;
+  background-color: #fafafa;
+  padding: 0 20px 20px;
+  border: 1px solid #eee;
+  display: none;
+  position: relative;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .pinglunSanjiao {
+  position: absolute;
+  top: -5px;
+  left: 150px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply {
+  display: none;
+  position: relative;
+  margin-bottom: 15px;
+  /*  .sanjiaoInput {
+                                                    position: absolute;
+                                                    top: -5px;
+                                                    left: 176px;
+                                                  }*/
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply .sanjiaoInput {
+  position: absolute;
+  top: -5px;
+  left: 132px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply .replyTipNohidden {
+  display: inline-block;
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply input {
+  outline: none;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #eee;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply input:focus {
+  border: 1px solid #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply span {
+  display: inline-block;
+  font-size: 13px;
+  color: #999;
+  text-align: center;
+  float: right;
+  height: 26px;
+  width: 50px;
+  line-height: 26px;
+  margin: 0;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply .reply-cancle {
+  margin-right: -30px !important;
+  font-size: 13px !important;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply .reply-ok {
+  background-color: #2cb82c;
+  color: #fff !important;
+  font-size: 13px !important;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  margin-right: 0 !important;
+  margin-left: 35px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .reply .reply-ok:hover {
+  background: #28A528;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment {
+  padding: 16px 0;
+  font-size: 12px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment .a1 {
+  margin-right: 8px !important;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment .user-nickname,
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment .user-content {
+  margin-right: 4px !important;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment .user-content {
+  color: #666 !important;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment .user-nickname {
+  color: #84d784 !important;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .wrapComment img {
+  margin-top: -2px !important;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line {
+  margin-top: 7px;
+  margin-bottom: 10px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line span {
+  font-size: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line .comment-time,
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line .reply-btn {
+  display: inline-block;
+  margin-right: 40px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line .reply-delete {
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line i {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line .reply-btn:hover {
+  cursor: pointer;
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-top .user-content-line .reply-btn:hover i {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-bottom input {
+  outline: none;
+  width: 736px;
+  border: 1px solid #eee;
+  height: 36px;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-bottom .comment-btn {
+  width: 50px;
+  height: 26px;
+  background-color: #2cb82c;
+  color: #fff;
+  text-align: center;
+  float: right;
+  margin-top: 10px;
+  line-height: 26px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-bottom .comment-btn:hover {
+  background: #28A528;
+}
+.content .course-main .main .main-right .main-note .right-con .right-noteInfo .right-noteContent .pinglunBox .comment-bottom input:focus {
+  border: 1px solid #2cb82c;
+}
+.content .course-main .main .main-right .main-ask {
+  display: none;
+}
+.content .course-main .main .main-right .main-ask .right-ask {
+  color: #333;
+  font-size: 14px;
+}
+.content .course-main .main .main-right .main-ask .right-ask span {
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-ask .right-ask span:first-child {
+  margin-right: 15px;
+  margin-left: 0;
+}
+.content .course-main .main .main-right .main-ask .right-ask i {
+  font-style: normal;
+  color: #EEEEEE;
+}
+.content .course-main .main .main-right .main-ask .right-ask .act {
+  color: #2CB82C;
+}
+.content .course-main .main .main-right .main-ask .right-con {
+  display: block;
+  min-height: 300px;
+  position: relative;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo {
+  padding: 17px 0;
+  border-bottom: 1px solid #eee;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askImg {
+  float: left;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askImg img {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askImg .ask-username {
+  width: 47px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 12px;
+  color: #666;
+  display: inline-block;
+  margin-top: 5px;
+  text-align: center;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent {
+  float: right;
+  width: 760px;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent a:hover {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .ask-title {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .ask-content {
+  line-height: 22px;
+  font-size: 12px;
+  color: #666;
+  margin: 6px 0;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others .right-ask-tags {
+  float: left;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others .right-ask-tags span {
+  background-color: #f5f5f5;
+  padding: 4px 7px;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others .right-ask-otherInfo {
+  float: right;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others em {
+  font-style: normal;
+  color: #f0f0f0;
+  display: inline-block;
+  margin: 0 8px;
+  -webkit-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -o-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others span {
+  display: inline-block;
+  font-size: 12px;
+  color: #999;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others span i {
+  font-size: 12px;
+  color: #ccc;
+  display: inline-block;
+  margin-right: 5px;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others span i.select {
+  color: #2cb82c;
+}
+.content .course-main .main .main-right .main-ask .right-con .right-askInfo .right-askContent .right-ask-others .askShanchu {
+  cursor: pointer;
+}
+.content .course-main .main1 {
+  display: none;
+  width: 100%;
+  padding: 30px 30px 60px;
+  min-height: 600px;
+}
+.content .course-main .main1 .calder {
+  display: none;
+  width: 380px;
+  padding: 35px 35px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  float: left;
+}
+.content .course-main .main1 .calder .tool {
+  width: 100%;
+  clear: both;
+  position: relative;
+}
+.content .course-main .main1 .calder .tool .iconfont {
+  font-size: 14px;
+  color: #888;
+}
+.content .course-main .main1 .calder .tool .calder-up {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+.content .course-main .main1 .calder .tool .calder-data {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+.content .course-main .main1 .calder .tool .calder-down {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.content .course-main .main1 .calder .tool .forbidden {
+  color: #ddd;
+  cursor: default;
+}
+.content .course-main .main1 .calder .tool .forbidden i {
+  color: #ddd;
+}
+.content .course-main .main1 .calder .data-show {
+  width: 100%;
+  margin-top: 30px;
+}
+.content .course-main .main1 .calder .data-show ol {
+  margin-bottom: 20px;
+}
+.content .course-main .main1 .calder .data-show ol li {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  margin-right: 16px;
+}
+.content .course-main .main1 .calder .data-show ul li {
+  cursor: pointer;
+  float: left;
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 10px;
+}
+.content .course-main .main1 .calder .data-show ul li span {
+  display: none;
+}
+.content .course-main .main1 .calder .data-show ul li i {
+  display: none;
+}
+.content .course-main .main1 .calder .data-show ul .kong {
+  cursor: pointer;
+}
+.content .course-main .main1 .calder .data-show ul .ban {
+  color: #aaa;
+  cursor: default;
+}
+.content .course-main .main1 .calder .data-show ul .xiu {
+  position: relative;
+}
+.content .course-main .main1 .calder .data-show ul .xiu i {
+  display: block;
+  top: -6px;
+  right: -4px;
+  position: absolute;
+  background: #2CB82C;
+  color: #fff;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 16px;
+  font-size: 12px;
+  font-style: normal;
+}
+.content .course-main .main1 .calder .data-show ul .today {
+  color: #2CB82C;
+  position: relative;
+}
+.content .course-main .main1 .calder .data-show ul .today span {
+  display: block;
+  width: 12px;
+  left: 10px;
+  height: 3px;
+  background: #2CB82C;
+  position: absolute;
+  bottom: 4px;
+}
+.content .course-main .main1 .calder .data-show ul .pick {
+  color: #fff;
+  background: #2CB82C;
+}
+.content .course-main .main1 .calder .data-show ul .pick i {
+  display: none;
+}
+.content .course-main .main1 .myplan {
+  display: block;
+  float: right;
+  width: 722px;
+  border: 1px solid #eeeeee;
+  border-bottom: 0;
+  /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+  /*定义滚动条轨道 内阴影+圆角*/
+  /*定义滑块 内阴影+圆角*/
+}
+.content .course-main .main1 .myplan ::-webkit-scrollbar {
+  cursor: pointer;
+  width: 8px;
+  height: 16px;
+}
+.content .course-main .main1 .myplan ::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+.content .course-main .main1 .myplan ::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+.content .course-main .main1 .myplan ol {
+  background: #FAFAFA;
+  line-height: 50px;
+  font-size: 16px;
+  color: #333;
+}
+.content .course-main .main1 .myplan ol span {
+  display: block;
+  float: left;
+}
+.content .course-main .main1 .myplan li {
+  width: 100%;
+  display: block;
+  float: left;
+  color: #333;
+  font-size: 14px;
+  padding: 0 30px;
+  position: relative;
+}
+.content .course-main .main1 .myplan li * {
+  display: inline-block;
+  vertical-align: middle;
+}
+.content .course-main .main1 .myplan li a {
+  color: #2CB82C;
+  margin-top: 10px;
+}
+.content .course-main .main1 .myplan li a span {
+  margin-left: 10px;
+}
+.content .course-main .main1 .myplan li a em {
+  font-style: normal;
+  margin-left: 10px;
+}
+.content .course-main .main1 .myplan ul {
+  max-height: 700px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 100%;
+  position: relative;
+}
+.content .course-main .main1 .myplan ul li {
+  position: relative;
+  padding: 20px 30px;
+  border-bottom: 1px solid #f4f4f4;
+  display: table;
+  vertical-align: middle;
+}
+.content .course-main .main1 .myplan ul li:hover {
+  background: #F5F8FB;
+}
+.content .course-main .main1 .myplan ul .active {
+  background: #e8f6e8;
+  color: #2CB82C;
+}
+.content .course-main .main1 .myplan .td1 {
+  width: 20%;
+}
+.content .course-main .main1 .myplan .td2 {
+  width: 20%;
+}
+.content .course-main .main1 .myplan .td3 {
+  width: 60%;
+}
+.content .course-main .main1 .myplan .td3 span {
+  line-height: 22px;
+}
+.content .course-main .main1 .myplan .td3 a:hover {
+  border-bottom: 1px solid #2CB82C;
+}

@@ -1,0 +1,2153 @@
+html,
+body {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+  background-color: #f4f5f4!important;
+  overflow-x: hidden;
+}
+body,
+html,
+p,
+ul,
+li,
+a,
+img {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: inline-block;
+}
+.clearfix:after {
+  content: "";
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.flag {
+  height: 36px;
+  width: 95px;
+  display: block;
+}
+.opened {
+  height: auto !important;
+}
+.toggle .opens {
+  color: #2CB82C !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.toggle:hover {
+  text-decoration: underline !important;
+  color: #2CB82C !important;
+}
+.toggle .closes,
+.opened .toggle .opens {
+  display: none;
+  color: #2CB82C !important;
+  font-size: 13px;
+  text-decoration: none;
+}
+.toggle .opened,
+.opened .toggle .closes {
+  display: inline;
+  color: #2CB82C;
+  font-size: 13px;
+  text-decoration: none;
+}
+.rTips {
+  padding: 0 30px;
+  height: 60px;
+  position: fixed;
+  z-index: 9999;
+  top: 45%;
+  left: 56%;
+  margin-left: -76px;
+  margin-top: -31px;
+  line-height: 60px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.4;
+  -o-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+.collectXian {
+  width: 920px;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+}
+.collectXian {
+  width: 920px;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin-top: 15px;
+}
+.content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.content .account {
+  width: 100%;
+  margin-top: 20px;
+  background: #fff;
+  padding: 28px 0;
+  background: url("../images/130/mystudy_bg.png") no-repeat right top;
+}
+.content .account .headimg {
+  width: 74px;
+  height: 74px;
+  border-radius: 37px;
+  margin-left: 30px;
+  float: left;
+  overflow: hidden;
+}
+.content .account .headimg img {
+  width: 100%;
+  height: 100%;
+}
+.content .account .mess {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.content .account .mess .name {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  height: 20px;
+}
+.content .account .mess .msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+  width: 178px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+.content .con-main {
+  width: 1200px;
+  margin: 20px auto 0;
+  background: #fff;
+  min-height: 300px;
+  background: url("../images/130/coursecenterbg.png") repeat-y left top;
+}
+.content .con-main .main-left {
+  float: left;
+  width: 220px;
+  height: 100%;
+  background: #fafafa;
+  display: block;
+}
+.content .con-main .main-left ul {
+  height: 100%;
+  display: block;
+}
+.content .con-main .main-left ul li {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  font-size: 16px;
+  color: #333;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  position: relative;
+}
+.content .con-main .main-left ul li span {
+  width: 2px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin-top: 20px;
+}
+.content .con-main .main-left ul li a {
+  margin-left: 60px;
+  color: #333;
+}
+.content .con-main .main-left ul li .iconfont {
+  position: absolute;
+  left: 30px;
+  color: #ddd;
+}
+.content .con-main .main-left ul li:hover {
+  background: #fff;
+}
+.content .con-main .main-left ul li:hover span {
+  background: #2CB82C;
+}
+.content .con-main .main-left ul li:hover a {
+  color: #2CB82C;
+}
+.content .con-main .main-left ul li:hover .iconfont {
+  color: #2cb82c;
+}
+.content .con-main .main-left ul .active {
+  background: #fff;
+}
+.content .con-main .main-left ul .active span {
+  background: #2CB82C;
+}
+.content .con-main .main-left ul .active a {
+  color: #2CB82C;
+}
+.content .con-main .main-left ul .active .iconfont {
+  color: #2cb82c;
+}
+.content .con-main .main-left ul .course.active {
+  background: #fff;
+}
+.content .con-main .main-left ul .buy.active {
+  background: #fff;
+}
+.content .con-main .main-left ul .college {
+  display: none;
+}
+.content .con-main .main-left ul .college.active {
+  background: #fff;
+}
+.content .con-main .main-right {
+  float: left;
+  background: #fff;
+  padding: 0 30px 50px;
+  width: 980px;
+  position: relative;
+  min-height: 300px;
+}
+.content .con-main .main-right .mycourse {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.content .con-main .main-right .mycourse .right-title span {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 56px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycourse .right-title .act {
+  border-bottom: 1px solid #2CB82C;
+  color: #2CB82C;
+}
+.content .con-main .main-right .mycourse .right-course {
+  width: 100%;
+  clear: both;
+  margin: 10px auto 0;
+  min-height: 220px;
+}
+.content .con-main .main-right .mycourse .right-course .loadrr {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 0 20px;
+  margin-left: -48px;
+  margin-top: -22px;
+}
+.content .con-main .main-right .mycourse .right-course .loadrr .loadingImg {
+  display: block;
+  width: 56px;
+  height: 8px;
+  margin: 0 auto;
+}
+.content .con-main .main-right .mycourse .right-course .loadrr .loadingWord {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #333;
+  width: 37px;
+  margin-top: 5px;
+}
+.content .con-main .main-right .mycourse .right-course .box {
+  width: 110%;
+}
+.content .con-main .main-right .mycourse .right-course .course {
+  width: 213px;
+  border: 1px solid #f0f0f0;
+  margin-right: 20px;
+  float: left;
+  margin-top: 20px;
+}
+.content .con-main .main-right .mycourse .right-course .course a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .mycourse .right-course .course:hover {
+  -webkit-box-shadow: 1px 1px 2px 1px #ECECEC;
+  -moz-box-shadow: 1px 1px 2px 1px #ECECEC;
+  box-shadow: 1px 1px 2px 1px #ECECEC;
+}
+.content .con-main .main-right .mycourse .right-course .course:hover .range {
+  background: #F5F5F5;
+}
+.content .con-main .main-right .mycourse .right-course .course .aimg {
+  width: 197px;
+  height: 111px;
+  margin: 8px;
+  overflow: hidden;
+  background: url("../img/load26.gif") no-repeat center center;
+  background-color: #f0f0f0;
+  line-height: 111px;
+  text-align: center;
+}
+.content .con-main .main-right .mycourse .right-course .course .aimg .rr {
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .mycourse .right-course .course .name {
+  line-height: 25px;
+  padding: 0 12px;
+  color: #333;
+  font-size: 14px;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mycourse .right-course .course .range {
+  width: 100%;
+  height: 38px;
+  background: #fff;
+  padding: 0 12px;
+  line-height: 38px;
+  overflow: hidden;
+}
+.content .con-main .main-right .mycourse .right-course .course .range .rangelength {
+  width: 120px;
+  height: 3px;
+  background: #ddd;
+  border-radius: 3px;
+  margin-top: 17px;
+  position: relative;
+  float: left;
+}
+.content .con-main .main-right .mycourse .right-course .course .range .rangelength .lt {
+  position: absolute;
+  left: -2px;
+  top: -4px;
+}
+.content .con-main .main-right .mycourse .right-course .course .range .rangelength .green {
+  display: block;
+  height: 3px;
+  border-radius: 3px;
+  background: #2CB82C;
+}
+.content .con-main .main-right .mycourse .right-course .course .range .rangenum {
+  float: left;
+  margin-left: 10px;
+  color: #333;
+  font-size: 14px;
+}
+.content .con-main .main-right .myanswerBox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.content .con-main .main-right .mybuy {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+.content .con-main .main-right .mybuy .right-title {
+  position: relative;
+}
+.content .con-main .main-right .mybuy .right-title div {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 56px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.content .con-main .main-right .mybuy .right-title .allorder {
+  padding: 0;
+  position: relative;
+}
+.content .con-main .main-right .mybuy .right-title .allorder span {
+  width: 125px;
+  padding: 0 28px;
+  height: 40px;
+  display: block;
+  border: 1px solid #fff;
+  margin: 8px 0;
+  text-align: center;
+  line-height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mybuy .right-title .allorder em {
+  background: url(../images/home_select_down.png) left top no-repeat;
+  position: absolute;
+  width: 9px;
+  height: 5px;
+  display: block;
+  right: 14px;
+  top: 28px;
+}
+.content .con-main .main-right .mybuy .right-title .allorder .all-change {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #EBEBEB;
+  background: #fff;
+  top: 47px;
+  left: 0;
+  display: none;
+}
+.content .con-main .main-right .mybuy .right-title .allorder .all-change:hover {
+  display: block;
+}
+.content .con-main .main-right .mybuy .right-title .allorder .all-change a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 37px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.content .con-main .main-right .mybuy .right-title .allorder .all-change a:hover {
+  color: #fff;
+  background: #2cb82c;
+}
+.content .con-main .main-right .mybuy .right-title .allorder .all-change .active {
+  color: #fff;
+  background: #2cb82c;
+}
+.content .con-main .main-right .mybuy .right-title .allorder:hover {
+  color: #2CB82C;
+}
+.content .con-main .main-right .mybuy .right-title .allorder:hover span {
+  border: 1px solid #EBEBEB;
+}
+.content .con-main .main-right .mybuy .right-title .allorder:hover em {
+  background: url("../images/home_select_up.png") left top no-repeat !important;
+}
+.content .con-main .main-right .mybuy .right-title .allorder:hover .all-change {
+  display: block;
+}
+.content .con-main .main-right .mybuy .right-title .act {
+  border-bottom: 1px solid #2CB82C;
+  color: #2CB82C!important;
+}
+.content .con-main .main-right .mybuy .right-title .act.allorder em {
+  background: url("../images/home_select_down_green.png") left top no-repeat;
+}
+.content .con-main .main-right .mybuy .right-course {
+  width: 100%;
+  clear: both;
+  margin: 20px auto 0;
+}
+.content .con-main .main-right .mybuy .right-course .ordername {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #f5f5f5;
+  padding: 0 20px;
+}
+.content .con-main .main-right .mybuy .right-course .ordername span {
+  display: block;
+  text-align: center;
+  float: left;
+  color: #333;
+  font-size: 14px;
+}
+.content .con-main .main-right .mybuy .right-course .or1 {
+  width: 370px;
+  text-align: left;
+}
+.content .con-main .main-right .mybuy .right-course .or2 {
+  min-width: 100px;
+  text-align: center;
+}
+.content .con-main .main-right .mybuy .right-course .or3 {
+  min-width: 90px;
+  text-align: center;
+}
+.content .con-main .main-right .mybuy .right-course .or4 {
+  min-width: 110px;
+  text-align: center;
+}
+.content .con-main .main-right .mybuy .right-course .or5 {
+  min-width: 110px;
+  text-align: center;
+}
+.content .con-main .main-right .mybuy .right-course .or6 {
+  min-width: 78px;
+  text-align: center;
+  float: right!important;
+}
+.content .con-main .main-right .mybuy .right-course .or6 a {
+  display: block;
+  width: 78px;
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  border: 1px solid #2CB82C;
+  color: #2CB82C;
+  margin-top: 32px;
+  border-radius: 2px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable {
+  width: 100%;
+  min-height: 235px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord {
+  width: 100%;
+  margin-top: 20px;
+  border: 1px solid #EBEBEB;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-01 {
+  line-height: 40px;
+  background: #FAFAFA;
+  color: #333;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 0 20px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-01 .time {
+  margin-right: 25px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 {
+  display: block;
+  padding: 20px 20px 0;
+  line-height: 100px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 div {
+  float: left;
+  color: #333;
+  font-size: 14px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .img {
+  width: 180px;
+  height: 100px;
+  float: left;
+  display: block;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .img img {
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .name {
+  float: left;
+  width: 170px;
+  margin-left: 20px;
+  height: 100px;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .name span {
+  display: table-cell;
+  line-height: 20px;
+  height: 100px;
+  vertical-align: middle;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .or3,
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .or4 {
+  color: #ff1012;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .or6 {
+  line-height: 100px;
+  float: right;
+}
+.content .con-main .main-right .mybuy .right-course .ordertable .ord .ord-02 .or7 {
+  clear: both;
+  color: #ff1012;
+  line-height: 50px;
+  font-size: 14px;
+}
+.content .con-main .main-right .mycollege {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content .con-main .main-right .mycollege .right-title span {
+  padding: 0 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 56px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .right-title .act {
+  border-bottom: 1px solid #2CB82C;
+  color: #2CB82C;
+}
+.content .con-main .main-right .mycollege .college1 {
+  width: 100%;
+  clear: both;
+  display: block;
+}
+.content .con-main .main-right .mycollege .college1 .right-college {
+  width: 100%;
+  clear: both;
+  margin: 10px auto 0;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .banji {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 10px;
+  background: #FAFAFA;
+  padding-left: 20px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .banji .banjiName {
+  color: #333;
+  font-size: 14px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .banji .renshu,
+.content .con-main .main-right .mycollege .college1 .right-college .banji .renshu1 {
+  color: #999;
+  font-size: 12px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .banji .renshu {
+  margin-left: 10px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .tit {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 {
+  display: block;
+  float: left;
+  width: 258px;
+  height: 80px;
+  border: 1px solid #e6ecf7;
+  background: #fcfdff;
+  border-radius: 2px;
+  position: relative;
+  padding: 0 15px;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .teach_img {
+  float: left;
+  margin-top: 12px;
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 28px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .teach_img img {
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .dian {
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  line-height: 12px;
+  z-index: 10;
+  left: 57px;
+  top: 53px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .dian .green {
+  margin: 2px auto 0;
+  width: 8px;
+  height: 8px;
+  display: block;
+  background: #2CB82C;
+  border-radius: 5px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .teach_mess {
+  float: left;
+  margin-left: 12px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .teach_mess .name {
+  font-size: 14px;
+  color: #333;
+  margin-top: 16px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .teach_mess .xueke {
+  font-size: 12px;
+  color: #999;
+  margin-top: 10px;
+  max-width: 155px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01:hover .more {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .more {
+  position: absolute;
+  z-index: 11;
+  padding: 9px 15px 14px;
+  background: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  top: -16px;
+  left: 120px;
+  display: none;
+  width: 200px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .more:after {
+  content: "";
+  border: 8px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  left: -16px;
+  top: 32px;
+  width: 0;
+  height: 0;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .more .mm {
+  display: block;
+  width: 36px;
+  height: 100%;
+  white-space: nowrap;
+  float: left;
+  line-height: 24px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .more div {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 134px;
+  line-height: 24px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .teacher .teach .teach_01 .more div span {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .tit {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .tab {
+  display: block;
+  clear: both;
+  margin-top: 15px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .tab li {
+  float: left;
+  width: 47px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  display: block;
+  border-radius: 11px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .tab .active {
+  background: #2CB82C;
+  color: #fff;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud {
+  width: 100%;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child {
+  width: 110%;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 {
+  width: 170px;
+  height: 62px;
+  margin-right: 15px;
+  border: 1px solid #e6ecf7;
+  background: #fcfdff;
+  border-radius: 2px;
+  position: relative;
+  padding: 0 15px;
+  margin-top: 15px;
+  float: left;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .stud_img {
+  float: left;
+  margin-top: 9px;
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 22px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .stud_img img {
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .dian {
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  position: absolute;
+  text-align: center;
+  line-height: 12px;
+  z-index: 10;
+  left: 51px;
+  top: 40px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .dian .blue {
+  margin: 2px auto 0;
+  width: 6px;
+  height: 6px;
+  display: block;
+  background: #5faaf7;
+  border-radius: 5px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .stud_mess {
+  float: left;
+  margin-left: 10px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .stud_mess .name {
+  font-size: 14px;
+  color: #333;
+  margin-top: 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 80px;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .stud_mess .xueke {
+  font-size: 12px;
+  color: #999;
+  margin-top: 4px;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .more {
+  position: absolute;
+  z-index: 11;
+  padding: 0 15px 20px;
+  background: #fff;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  top: -42px;
+  left: 120px;
+  display: none;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .more:after {
+  content: "";
+  border: 8px solid transparent;
+  border-right-color: #fff;
+  position: absolute;
+  left: -16px;
+  top: 69px;
+  width: 0;
+  height: 0;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01 .more p {
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mycollege .college1 .right-college .student .stud .stud-child .child_01:hover .more {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college2 {
+  width: 100%;
+  display: none;
+}
+.content .con-main .main-right .mycollege .college2 .tab2 {
+  display: block;
+  clear: both;
+  padding: 20px 0;
+}
+.content .con-main .main-right .mycollege .college2 .tab2 span {
+  font-size: 14px;
+  color: #333;
+  float: left;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college2 .tab2 .tab2_01 {
+  padding-right: 12px;
+  border-right: 1px solid #eeeeee;
+  display: block;
+}
+.content .con-main .main-right .mycollege .college2 .tab2 .tab2_02 {
+  padding-left: 12px;
+}
+.content .con-main .main-right .mycollege .college2 .tab2 .act {
+  color: #2CB82C;
+}
+.content .con-main .main-right .mycollege .college2 .table {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college2 .table ol {
+  padding: 0;
+  margin: 0;
+}
+.content .con-main .main-right .mycollege .college2 .table li {
+  height: 46px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+.content .con-main .main-right .mycollege .college2 .table li:hover {
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.1);
+}
+.content .con-main .main-right .mycollege .college2 .table li span {
+  line-height: 46px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-right: 32px;
+  height: 46px;
+}
+.content .con-main .main-right .mycollege .college2 .table li .name {
+  width: 170px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .table li .course {
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .table li .starttime {
+  width: 140px;
+}
+.content .con-main .main-right .mycollege .college2 .table li .endtime {
+  width: 138px;
+}
+.content .con-main .main-right .mycollege .college2 .table li .timelength {
+  width: 34px;
+}
+.content .con-main .main-right .mycollege .college2 .table li .tool {
+  width: 58px;
+  margin: 0;
+  height: 46px;
+  overflow: hidden;
+}
+.content .con-main .main-right .mycollege .college2 .table li .tool em {
+  line-height: 18px;
+  font-style: normal;
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-top: 14px;
+}
+.content .con-main .main-right .mycollege .college2 .table li .tool em:hover {
+  color: #2CB82C;
+  border-bottom: 1px solid #2CB82C;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college2 .table .nav {
+  background: #fafafa;
+  font-size: 16px;
+  color: #333;
+  border: none;
+}
+.content .con-main .main-right .mycollege .college2 .table .nav:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.content .con-main .main-right .mycollege .college2 .history {
+  display: none;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter {
+  height: 36px;
+  clear: both;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #999;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .xiala {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 118px;
+  max-height: 175px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #F0F0F0;
+  border-top: none;
+  display: none;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .xiala em {
+  font-style: normal;
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .xiala em:hover {
+  color: #fff;
+  background: #2CB82C;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 {
+  float: left;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 span {
+  float: left;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 .name_01 {
+  width: 118px;
+  height: 36px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_01 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 span {
+  float: left;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 .name_01 {
+  width: 118px;
+  height: 36px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_02 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_03 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_03 .input {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_03 .input input {
+  outline: none;
+  padding-left: 27px;
+  border: none;
+  height: 32px;
+  width: 145px;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_03 .iconfont {
+  color: #ddd;
+  position: absolute;
+  left: 5px;
+  width: 16px;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_04 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college2 .history .filter .filter_04 input {
+  outline: none;
+  width: 131px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  line-height: 36px;
+  text-indent: 10px;
+}
+.content .con-main .main-right .mycollege .college2 .history ol {
+  padding: 0;
+  margin: 0;
+}
+.content .con-main .main-right .mycollege .college2 .history li {
+  height: 46px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+.content .con-main .main-right .mycollege .college2 .history li:hover {
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.1);
+}
+.content .con-main .main-right .mycollege .college2 .history li span {
+  line-height: 46px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-right: 30px;
+  height: 46px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .name {
+  width: 141px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .history li .course {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college2 .history li .starttime {
+  width: 120px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .endtime {
+  width: 120px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .state {
+  width: 45px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .score {
+  width: 49px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .tool {
+  width: 58px;
+  margin: 0;
+  height: 46px;
+  overflow: hidden;
+}
+.content .con-main .main-right .mycollege .college2 .history li .tool em {
+  line-height: 18px;
+  font-style: normal;
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-top: 14px;
+}
+.content .con-main .main-right .mycollege .college2 .history li .tool em:hover {
+  color: #2CB82C;
+  border-bottom: 1px solid #2CB82C;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college2 .history .nav {
+  background: #fafafa;
+  font-size: 16px;
+  color: #333;
+  border: none;
+}
+.content .con-main .main-right .mycollege .college2 .history .nav:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.content .con-main .main-right .mycollege .college3 {
+  width: 100%;
+  display: none;
+}
+.content .con-main .main-right .mycollege .college3 .tab3 {
+  display: block;
+  clear: both;
+  padding: 20px 0;
+}
+.content .con-main .main-right .mycollege .college3 .tab3 span {
+  font-size: 14px;
+  color: #333;
+  float: left;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college3 .tab3 .tab3_01 {
+  padding-right: 12px;
+  border-right: 1px solid #eeeeee;
+  display: block;
+}
+.content .con-main .main-right .mycollege .college3 .tab3 .tab3_02 {
+  padding-left: 12px;
+}
+.content .con-main .main-right .mycollege .college3 .tab3 .act {
+  color: #2CB82C;
+}
+.content .con-main .main-right .mycollege .college3 .table {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college3 .table ol {
+  padding: 0;
+  margin: 0;
+}
+.content .con-main .main-right .mycollege .college3 .table li {
+  height: 46px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+.content .con-main .main-right .mycollege .college3 .table li:hover {
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.1);
+}
+.content .con-main .main-right .mycollege .college3 .table li span {
+  line-height: 46px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-right: 32px;
+}
+.content .con-main .main-right .mycollege .college3 .table li .name {
+  width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .table li .course {
+  width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .table li .starttime {
+  width: 150px;
+}
+.content .con-main .main-right .mycollege .college3 .table li .endtime {
+  width: 150px;
+}
+.content .con-main .main-right .mycollege .college3 .table li .timelength {
+  width: 34px;
+}
+.content .con-main .main-right .mycollege .college3 .table li .tool {
+  width: 58px;
+  margin: 0;
+  height: 46px;
+  overflow: hidden;
+}
+.content .con-main .main-right .mycollege .college3 .table li .tool em {
+  line-height: 18px;
+  font-style: normal;
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-top: 14px;
+}
+.content .con-main .main-right .mycollege .college3 .table li .tool em:hover {
+  color: #2CB82C;
+  border-bottom: 1px solid #2CB82C;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college3 .table .nav {
+  background: #fafafa;
+  font-size: 16px;
+  color: #333;
+  border: none;
+}
+.content .con-main .main-right .mycollege .college3 .table .nav:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.content .con-main .main-right .mycollege .college3 .history {
+  display: none;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter {
+  height: 36px;
+  clear: both;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #999;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .xiala {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  width: 118px;
+  max-height: 175px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #F0F0F0;
+  border-top: none;
+  display: none;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .xiala em {
+  font-style: normal;
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .xiala em:hover {
+  color: #fff;
+  background: #2CB82C;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 {
+  float: left;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 span {
+  float: left;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 .name_01 {
+  width: 118px;
+  height: 36px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_01 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 span {
+  float: left;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 .name_01 {
+  width: 118px;
+  height: 36px;
+  margin-left: 10px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_02 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_03 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_03 .input {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_03 .input input {
+  outline: none;
+  padding-left: 27px;
+  border: none;
+  height: 32px;
+  width: 145px;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_03 .iconfont {
+  color: #ddd;
+  left: 5px;
+  width: 16px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_04 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .mycollege .college3 .history .filter .filter_04 input {
+  outline: none;
+  width: 131px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  line-height: 36px;
+  text-indent: 10px;
+}
+.content .con-main .main-right .mycollege .college3 .history ol {
+  padding: 0;
+  margin: 0;
+}
+.content .con-main .main-right .mycollege .college3 .history li {
+  height: 46px;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #666;
+  border-bottom: 1px solid #f0f0f0;
+}
+.content .con-main .main-right .mycollege .college3 .history li:hover {
+  box-shadow: 1px 0 8px rgba(0, 0, 0, 0.1);
+}
+.content .con-main .main-right .mycollege .college3 .history li span {
+  line-height: 46px;
+  text-align: left;
+  display: block;
+  float: left;
+  margin-right: 18px;
+  height: 46px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .name {
+  width: 155px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .history li .course {
+  width: 165px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .mycollege .college3 .history li .starttime {
+  width: 150px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .endtime {
+  width: 150px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .timelength {
+  width: 34px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .state {
+  width: 45px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .score {
+  width: 49px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .tool {
+  width: 58px;
+  margin: 0;
+  height: 46px;
+  overflow: hidden;
+}
+.content .con-main .main-right .mycollege .college3 .history li .tool em {
+  line-height: 18px;
+  font-style: normal;
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-top: 14px;
+}
+.content .con-main .main-right .mycollege .college3 .history li .tool em:hover {
+  color: #2CB82C;
+  border-bottom: 1px solid #2CB82C;
+  cursor: pointer;
+}
+.content .con-main .main-right .mycollege .college3 .history .nav {
+  background: #fafafa;
+  font-size: 16px;
+  color: #333;
+  border: none;
+}
+.content .con-main .main-right .mycollege .college3 .history .nav:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.content .con-main .main-right .myshare {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: relative;
+}
+.content .con-main .main-right .myshare .share_link .tit {
+  color: #333;
+  font-size: 16px;
+  line-height: 56px;
+}
+.content .con-main .main-right .myshare .share_link .cont {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont1 {
+  height: 54px;
+  line-height: 54px;
+  display: none;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont1 span {
+  float: left;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont1 .t2 {
+  margin-left: 20px;
+  display: block;
+  height: 38px;
+  text-align: center;
+  width: 110px;
+  background: #2CB82C;
+  line-height: 38px;
+  color: #fff;
+  margin-top: 9px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont1 .t2:hover {
+  background: #28A528;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 {
+  height: 54px;
+  line-height: 54px;
+  white-space: nowrap;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .link {
+  width: 510px;
+  height: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  float: left;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .copy {
+  float: left;
+  margin-left: 30px;
+  color: #2CB82C;
+  font-size: 16px;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .yongjin {
+  float: right;
+  white-space: nowrap;
+  height: 54px;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .yongjin i {
+  float: left;
+  color: #ff4012;
+  font-size: 19px;
+  padding-top: 2px;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .yongjin .yj {
+  float: left;
+  margin-left: 10px;
+  height: 100%;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .yongjin .yj span {
+  color: #ff4012;
+  font-size: 22px;
+}
+.content .con-main .main-right .myshare .share_link .cont .cont2 .line {
+  float: right;
+  margin-right: 40px;
+  height: 36px;
+  border-left: 1px solid #d8d8d8;
+  margin-top: 9px;
+  width: 0;
+}
+.content .con-main .main-right .myshare .right-title {
+  margin-top: 30px;
+}
+.content .con-main .main-right .myshare .right-title span {
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333;
+  line-height: 56px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .right-title .act {
+  border-bottom: 1px solid #2CB82C;
+  color: #2CB82C;
+}
+.content .con-main .main-right .myshare .right-share {
+  width: 100%;
+}
+.content .con-main .main-right .myshare .right-share .share0 {
+  width: 100%;
+  height: 100%;
+}
+.content .con-main .main-right .myshare .right-share .share0 .tongji {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+  height: 040px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .tongji p {
+  float: left;
+  margin-right: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .tongji p span {
+  color: #2cb82c;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter {
+  height: 36px;
+  clear: both;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .xiala {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  width: 118px;
+  max-height: 175px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #F0F0F0;
+  border-top: none;
+  display: none;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .xiala em {
+  font-style: normal;
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .xiala em:hover {
+  color: #fff;
+  background: #2CB82C;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 {
+  float: left;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 span {
+  float: left;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 .name_01 {
+  width: 118px;
+  height: 36px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_01 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 {
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 span {
+  float: left;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 .name_01 {
+  width: 118px;
+  height: 36px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_02 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_03 {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_03 .input {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_03 .input input {
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  height: 32px;
+  width: 145px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_03 .iconfont {
+  color: #ddd;
+  left: 5px;
+  width: 16px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_04 {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_04 input {
+  cursor: pointer;
+  outline: none;
+  width: 131px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  line-height: 36px;
+  text-indent: 10px;
+  background: url(../images/rili.png) no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_04 .rili {
+  display: none;
+  position: absolute;
+  right: 156px;
+  top: 10px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .filter_04 .rili1 {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .sub {
+  float: left;
+  width: 95px;
+  display: block;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  background: #2CB82C;
+  border-radius: 2px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .right-share .share0 .filter .sub:hover {
+  background: #28A528;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list {
+  clear: both;
+  width: 100%;
+  min-height: 300px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .l1 {
+  width: 180px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .l2 {
+  width: 180px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .l3 {
+  width: 180px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .l4 {
+  width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTh {
+  display: block;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTh span {
+  float: left;
+  text-align: center;
+  margin-right: 65px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTb {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTb li {
+  border-bottom: 1px solid #EEEEEE;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTb span {
+  float: left;
+  text-align: center;
+  margin-right: 65px;
+  display: block;
+  height: 40px;
+}
+.content .con-main .main-right .myshare .right-share .share0 .list .listTb .l4 {
+  color: #2CB82C;
+}
+.content .con-main .main-right .myshare .right-share .share1 {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content .con-main .main-right .myshare .right-share .share1 .tongji {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 0 10px;
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .tongji p {
+  float: left;
+  margin-right: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .tongji p span {
+  color: #2cb82c;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter {
+  height: 36px;
+  clear: both;
+  margin-bottom: 20px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #999;
+  margin-top: 20px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .xiala {
+  position: absolute;
+  top: 36px;
+  right: 0;
+  width: 118px;
+  max-height: 175px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #F0F0F0;
+  border-top: none;
+  display: none;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .xiala em {
+  font-style: normal;
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  padding: 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .xiala em:hover {
+  color: #fff;
+  background: #2CB82C;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 {
+  float: left;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 span {
+  float: left;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 .name_01 {
+  width: 140px;
+  height: 36px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 122px center;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 122px center;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 113px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_01 .name_01 .xiala {
+  width: 140px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 span {
+  float: left;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 .name_01 {
+  width: 118px;
+  height: 36px;
+  padding-left: 10px;
+  display: block;
+  border: 1px solid #f0f0f0;
+  cursor: pointer;
+  color: #333;
+  background: url("../images/select-myinfo-down.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 .name_01:hover {
+  background: url("../images/select-myinfo-up.png") no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 .name_01:hover .xiala {
+  display: block;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_02 .name_01 i {
+  font-style: normal;
+  display: block;
+  width: 90px;
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_03 {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_03 .input {
+  width: 148px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_03 .input input {
+  outline: none;
+  padding-left: 10px;
+  border: none;
+  height: 32px;
+  width: 145px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_03 .iconfont {
+  color: #ddd;
+  left: 5px;
+  width: 16px;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_04 {
+  float: left;
+  margin-left: 30px;
+  position: relative;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_04 input {
+  outline: none;
+  width: 131px;
+  height: 36px;
+  border: 1px solid #F0F0F0;
+  line-height: 36px;
+  text-indent: 10px;
+  cursor: pointer;
+  background: url(../images/rili.png) no-repeat 100px center;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_04 .rili {
+  display: none;
+  position: absolute;
+  right: 156px;
+  top: 10px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .filter_04 .rili1 {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .sub {
+  float: left;
+  width: 95px;
+  display: block;
+  height: 36px;
+  text-align: center;
+  color: #fff;
+  background: #2CB82C;
+  border-radius: 2px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.content .con-main .main-right .myshare .right-share .share1 .filter .sub:hover {
+  background: #28A528;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list {
+  clear: both;
+  width: 100%;
+  min-height: 300px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list1 {
+  width: 170px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list2 {
+  width: 200px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list3 {
+  width: 140px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list4 {
+  width: 120px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list5 {
+  width: 110px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list6 {
+  width: 110px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .list6 i {
+  font-style: normal;
+  color: #2cb82c;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .listTh {
+  display: block;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .listTh span {
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .listTb {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .listTb li {
+  border-bottom: 1px solid #EEEEEE;
+}
+.content .con-main .main-right .myshare .right-share .share1 .list .listTb span {
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  display: block;
+  height: 40px;
+}

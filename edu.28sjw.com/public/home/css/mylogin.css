@@ -1,0 +1,420 @@
+@charset "utf-8";
+@keyframes arrowAnimotion {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  30% {
+    transform: translateY(40px);
+  }
+  55% {
+    transform: translateY(50px);
+  }
+  60% {
+    transform: translateY(40px);
+  }
+  85% {
+    transform: translateY(50px);
+  }
+  90% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@-webkit-keyframes arrowAnimotion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@-ms-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+/*titleChange动画*/
+@keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-o-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+/*wordsChange动画*/
+@keyframes wordsChange {
+  0% {
+    transform: translateY(3400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes wordsChange {
+  0% {
+    -moz-transform: translateY(3400px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+  }
+}
+@-webkit-keyframes wordsChange {
+  0% {
+    -webkit-transform: translateY(3400px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+@-o-keyframes wordsChange {
+  0% {
+    -o-transform: translateY(3400px);
+  }
+  100% {
+    -o-transform: translateY(0px);
+  }
+}
+@-ms-keyframes wordsChange {
+  0% {
+    -ms-transform: translateY(3400px);
+  }
+  100% {
+    -ms-transform: translateY(0px);
+  }
+}
+.other-login-box {
+  width: 460px;
+}
+.other-login-box span {
+  font-size: 16px;
+  width: 460px;
+  color: #bbb;
+  text-align: center;
+  display: inline-block;
+}
+.other-login-box .other-login-ways {
+  width: 170px;
+  margin: 20px auto 0;
+}
+.other-login-box .other-login-ways .qq-login,
+.other-login-box .other-login-ways .weixin-login {
+  width: 60px;
+  height: 60px;
+  float: left;
+  display: inline-block;
+  cursor: pointer;
+}
+.other-login-box .other-login-ways .qq-login {
+  background: url("/web/images/loginRegister/QQ.png") no-repeat;
+  margin-right: 40px;
+}
+.other-login-box .other-login-ways .qq-login:hover {
+  background: url("/web/images/loginRegister/QQHover.png") no-repeat;
+}
+.other-login-box .other-login-ways .weixin-login {
+  background: url("/web/images/loginRegister/weixin.png") no-repeat;
+}
+.other-login-box .other-login-ways .weixin-login:hover {
+  background: url("/web/images/loginRegister/weixinHover.png") no-repeat;
+}
+html,
+body {
+  /*去掉IE中自动出现的小叉叉*/
+}
+html input::-ms-clear,
+body input::-ms-clear,
+html input::-ms-reveal,
+body input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+html .cymylogin,
+body .cymylogin {
+  border-radius: 4px;
+  margin: 0 auto;
+  width: 400px;
+  height: 410px;
+  background-color: #ffffff;
+  position: relative;
+}
+html .cymylogin em,
+body .cymylogin em {
+  display: inline-block;
+  width: 6px;
+}
+html .cymylogin .cymylogin-top,
+body .cymylogin .cymylogin-top {
+  width: 400px;
+  height: 50px;
+  position: relative;
+}
+html .cymylogin .cymylogin-top .cymyloginclose,
+body .cymylogin .cymylogin-top .cymyloginclose {
+  width: 30px;
+  height: 20px;
+  float: right;
+  background: url(../images/loginRegister/delete.png) no-repeat center center;
+  margin: 20px 20px 0 0;
+  cursor: pointer;
+  line-height: 17px;
+  color: #666;
+}
+html .cymylogin .cymylogin-top .cymyloginlogo,
+body .cymylogin .cymylogin-top .cymyloginlogo {
+  min-width: 212px;
+  height: 23px;
+  text-align: center;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 43px;
+}
+html .cymylogin .cymylogin-top .cymyloginzc,
+body .cymylogin .cymylogin-top .cymyloginzc {
+  position: absolute;
+  width: 85px;
+  height: 20px;
+  top: 39px;
+  left: 256px;
+  color: red;
+  text-indent: 21px;
+  background: url("../images/cy01.gif") no-repeat;
+  background-position: 1px 2px;
+  cursor: pointer;
+}
+html .cymylogin .cymylogin-top .cymyloginzc span:hover,
+body .cymylogin .cymylogin-top .cymyloginzc span:hover {
+  text-decoration: underline;
+}
+html .cymylogin .cymylogin-top .cymyloginhint,
+body .cymylogin .cymylogin-top .cymyloginhint {
+  position: absolute;
+  width: 210px;
+  height: 20px;
+  line-height: 20px;
+  top: 154px;
+  left: 45px;
+  color: #ff4012;
+  font-size: 14px;
+  text-indent: 21px;
+  background: url("../images/alter_14.png") no-repeat;
+  background-position: 1px 3px;
+  display: none;
+}
+html .cymylogin .cymylogin-bottom,
+body .cymylogin .cymylogin-bottom {
+  position: relative;
+}
+html .cymylogin .cymylogin-bottom input,
+body .cymylogin .cymylogin-bottom input {
+  width: 310px;
+  height: 46px;
+  outline: none;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 58px;
+  color: #333;
+  font-size: 14px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background: #f6f6f6;
+}
+html .cymylogin .cymylogin-bottom input:focus,
+body .cymylogin .cymylogin-bottom input:focus {
+  border: 1px solid #2cbb2c;
+  -webkit-border: 1px solid #2CB82C;
+}
+html .cymylogin .cymylogin-bottom .cymyloginclose1,
+body .cymylogin .cymylogin-bottom .cymyloginclose1,
+html .cymylogin .cymylogin-bottom .cymyloginsuccess,
+body .cymylogin .cymylogin-bottom .cymyloginsuccess {
+  background: url(../images/index/delete.png) no-repeat center center;
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 9px;
+  right: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #bdbdbd;
+}
+html .cymylogin .cymylogin-bottom .cymyloginsuccess,
+body .cymylogin .cymylogin-bottom .cymyloginsuccess {
+  background: url(../images/login/user-right.png) no-repeat center center;
+}
+html .cymylogin .cymylogin-bottom .cymyloginclose2,
+body .cymylogin .cymylogin-bottom .cymyloginclose2 {
+  background: url(../images/index/delete.png) no-repeat center center;
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 76px;
+  right: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  color: #bdbdbd;
+}
+html .cymylogin .cymylogin-bottom .closer-on,
+body .cymylogin .cymylogin-bottom .closer-on {
+  background: url(../images/submit.png) no-repeat;
+}
+html .cymylogin .cymylogin-bottom .cymyloginpassword,
+body .cymylogin .cymylogin-bottom .cymyloginpassword {
+  width: 310px;
+  height: 15px;
+  margin: 17px auto 46px;
+}
+html .cymylogin .cymylogin-bottom .cymyloginpassword a,
+body .cymylogin .cymylogin-bottom .cymyloginpassword a {
+  color: #999;
+}
+html .cymylogin .cymylogin-bottom .cymyloginpassword a:first-child,
+body .cymylogin .cymylogin-bottom .cymyloginpassword a:first-child {
+  float: left;
+  font-size: 14px;
+}
+html .cymylogin .cymylogin-bottom .cymyloginpassword a:last-child,
+body .cymylogin .cymylogin-bottom .cymyloginpassword a:last-child {
+  float: right;
+  font-size: 14px;
+}
+html .cymylogin .cymylogin-bottom .cymyloginpassword a:hover,
+body .cymylogin .cymylogin-bottom .cymyloginpassword a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #2cb82c;
+}
+html .cymylogin .cymylogin-bottom .register,
+body .cymylogin .cymylogin-bottom .register {
+  float: right;
+  width: 300px;
+  height: 24px;
+  text-align: left;
+}
+html .cymylogin .cymylogin-bottom .cyinput1,
+body .cymylogin .cymylogin-bottom .cyinput1 {
+  background-position: 12px 1px;
+  /* border-radius: 0;*/
+}
+html .cymylogin .cymylogin-bottom .cyinput2,
+body .cymylogin .cymylogin-bottom .cyinput2 {
+  background-position: 12px 1px;
+  /*  border-radius: 0;*/
+  margin-top: 22px;
+}
+html .cymylogin .cymylogin-bottom .cyinput1:focus,
+body .cymylogin .cymylogin-bottom .cyinput1:focus,
+html .cymylogin .cymylogin-bottom .cyinput2:focus,
+body .cymylogin .cymylogin-bottom .cyinput2:focus {
+  border: 1px solid #2CB82C;
+}
+html .cymylogin .cymylogin-bottom button:hover,
+body .cymylogin .cymylogin-bottom button:hover {
+  opacity: .8;
+}
+html .cymylogin .cymylogin-bottom .cymyloginbutton,
+body .cymylogin .cymylogin-bottom .cymyloginbutton {
+  font-size: 16px;
+  display: block;
+  margin: 38px auto 0;
+  width: 310px;
+  height: 46px;
+  background-color: #2cb82c;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+}

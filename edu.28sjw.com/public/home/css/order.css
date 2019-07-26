@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  overflow-x: hidden;
+  background: #F8F8F8;
+  height: 100%;
+  width: 100%;
+}
+p,
+a,
+img,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 20px;
+  padding: 20px 25px 25px 25px;
+}
+.main .main-title {
+  color: #333;
+  font-size: 18px;
+}
+.main .main-table {
+  border: 1px solid #eee;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.main .main-table .tr {
+  padding: 0 30px;
+  width: 100%;
+  height: 44px;
+  background: #fafafa;
+  color: #333;
+  font-size: 16px;
+  line-height: 44px;
+}
+.main .main-table .tr span {
+  display: block;
+  float: left;
+  text-align: center;
+}
+.main .main-table .tab {
+  padding: 0 30px;
+  width: 100%;
+  clear: both;
+  height: 122px;
+  padding-top: 25px;
+}
+.main .main-table .tab div {
+  float: left;
+  height: 100%;
+  text-align: center;
+}
+.main .main-table .tab .td4,
+.main .main-table .tab .td5 {
+  color: #ff1012;
+  font-size: 18px;
+}
+.main .main-table .tab .td1,
+.main .main-table .tab .td2,
+.main .main-table .tab .td3,
+.main .main-table .tab .td4,
+.main .main-table .tab .td5 {
+  line-height: 70px!important;
+}
+.main .main-table .td1 {
+  width: 285px;
+  height: 100%;
+}
+.main .main-table .td1 span {
+  display: block;
+}
+.main .main-table .td1 table {
+  height: 70px;
+}
+.main .main-table .td1 .img {
+  width: 125px;
+  height: 70px;
+  display: block;
+  float: left;
+}
+.main .main-table .td1 .img img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.main .main-table .td1 .name {
+  width: 140px;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 20px;
+  text-align: center;
+  float: left;
+  vertical-align: middle;
+  display: table-cell;
+}
+.main .main-table .td2 {
+  height: 100%;
+  width: 200px;
+}
+.main .main-table .td3 {
+  height: 100%;
+  width: 200px;
+}
+.main .main-table .td4 {
+  height: 100%;
+  width: 200px;
+}
+.main .main-table .td5 {
+  height: 100%;
+  width: 200px;
+}
+.main .sub {
+  display: block;
+  margin-top: 25px;
+  line-height: 42px;
+}
+.main .sub a {
+  display: block;
+  float: right;
+  height: 42px;
+  text-align: center;
+  width: 100px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 2px;
+  background: #2CB82C;
+}
+.main .sub p {
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
+.main .sub p span {
+  color: #ff1012;
+  font-size: 18px;
+}

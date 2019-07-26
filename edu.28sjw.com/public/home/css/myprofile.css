@@ -1,0 +1,1015 @@
+@keyframes arrowAnimotion {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  30% {
+    transform: translateY(40px);
+  }
+  55% {
+    transform: translateY(50px);
+  }
+  60% {
+    transform: translateY(40px);
+  }
+  85% {
+    transform: translateY(50px);
+  }
+  90% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@-webkit-keyframes arrowAnimotion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+@-ms-keyframes arrowAnimotion {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+/*titleChange动画*/
+@keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-moz-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-o-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@-ms-keyframes titleChange {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.5, 0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+/*wordsChange动画*/
+@keyframes wordsChange {
+  0% {
+    transform: translateY(3400px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes wordsChange {
+  0% {
+    -moz-transform: translateY(3400px);
+  }
+  100% {
+    -moz-transform: translateY(0px);
+  }
+}
+@-webkit-keyframes wordsChange {
+  0% {
+    -webkit-transform: translateY(3400px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+@-o-keyframes wordsChange {
+  0% {
+    -o-transform: translateY(3400px);
+  }
+  100% {
+    -o-transform: translateY(0px);
+  }
+}
+@-ms-keyframes wordsChange {
+  0% {
+    -ms-transform: translateY(3400px);
+  }
+  100% {
+    -ms-transform: translateY(0px);
+  }
+}
+@charset "utf-8";
+html,
+body {
+  font-family: "Microsoft Yahei";
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /*height: 100%;*/
+}
+html .cymyprofile,
+body .cymyprofile {
+  margin-bottom: 12px;
+}
+html .rrTips,
+body .rrTips {
+  width: 212px;
+  height: 60px;
+  position: fixed;
+  z-index: 9999;
+  top: 45%;
+  left: 50%;
+  margin-left: -106px;
+  margin-top: -31px;
+  line-height: 60px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.4;
+  -o-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+html .rrrTips,
+body .rrrTips {
+  width: 120px;
+  height: 50px;
+  position: fixed;
+  z-index: 9999;
+  top: 45%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -31px;
+  line-height: 50px;
+  background: #000;
+  filter: alpha(opacity=50);
+  /*ie*/
+  -moz-opacity: 0.4;
+  -o-opacity: 0.4;
+  -webkit-opacity: 0.4;
+  opacity: 0.4;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 2px;
+  display: none;
+}
+html .my-data-1,
+body .my-data-1 {
+  min-height: 530px;
+  font-size: 14px;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-1,
+body .my-data-1 .cy-myprofile-myfom-dv-1 {
+  margin-top: 18px;
+}
+html .my-data-1 div,
+body .my-data-1 div {
+  height: auto;
+  margin-bottom: 20px;
+}
+html .my-data-1 div input[type=password],
+body .my-data-1 div input[type=password] {
+  margin-right: 15px;
+}
+html .my-data-1 div .mypassword-g,
+body .my-data-1 div .mypassword-g {
+  margin-left: 15px;
+  color: #2CB82C;
+  font-size: 14px;
+  text-decoration: none;
+}
+html .my-data-1 div .mypassword-g:hover,
+body .my-data-1 div .mypassword-g:hover {
+  text-decoration: underline;
+}
+html .my-data-1 div .buer,
+body .my-data-1 div .buer {
+  line-height: 30px;
+  width: 76px;
+  text-align: right;
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+}
+html .my-data-1 div *,
+body .my-data-1 div * {
+  outline: none;
+}
+html .my-data-1 div .username,
+body .my-data-1 div .username {
+  background-color: #fafafa;
+  color: #666 !important;
+}
+html .my-data-1 div .ipt,
+body .my-data-1 div .ipt {
+  height: 38px;
+  width: 258px;
+  text-indent: 10px;
+  border: 1px solid #eee;
+  display: inline-block;
+  color: #333;
+  font-size: 14px;
+  /* -webkit-user-select: none;*/
+}
+html .my-data-1 div .ipt1,
+body .my-data-1 div .ipt1 {
+  width: 125px;
+  font-weight: normal;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-span,
+body .my-data-1 div .cy-myprofile-myfom-dv-span {
+  float: left;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+html .my-data-1 div textarea,
+body .my-data-1 div textarea {
+  font-size: 14px;
+  display: inline-block;
+  width: 390px;
+  height: 38px;
+  line-height: 33px;
+  resize: none;
+  text-indent: 5px;
+  color: #333;
+  border: 1px solid #eee;
+}
+html .my-data-1 div .mycytextarea:focus,
+body .my-data-1 div .mycytextarea:focus {
+  border: 1px solid #2cb82c;
+}
+html .my-data-1 div .btn1,
+body .my-data-1 div .btn1,
+html .my-data-1 div .btn2,
+body .my-data-1 div .btn2 {
+  font-size: 14px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+html .my-data-1 div .btn1,
+body .my-data-1 div .btn1 {
+  width: 68px;
+  height: 34px;
+  background-color: #2cb82c;
+}
+html .my-data-1 div .btn1:hover,
+body .my-data-1 div .btn1:hover {
+  background: #28a528;
+}
+html .my-data-1 div .btn2,
+body .my-data-1 div .btn2 {
+  color: #333;
+  width: 58px;
+  height: 28px;
+  border: 1px solid #d5d5d5;
+  margin-left: 15px;
+  margin-top: 4px;
+  background: white;
+}
+html .my-data-1 div .btn2:hover,
+body .my-data-1 div .btn2:hover {
+  border: 1px solid #28a528;
+  color: #28a528;
+}
+html .my-data-1 div .mycompany,
+body .my-data-1 div .mycompany {
+  width: 218px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-radio,
+body .my-data-1 div .cy-myprofile-myfom-dv-radio {
+  margin-left: 38px;
+  text-indent: 10px;
+  display: none;
+}
+html .my-data-1 div .myradio0,
+body .my-data-1 div .myradio0,
+html .my-data-1 div #myradio1,
+body .my-data-1 div #myradio1 {
+  margin-left: 13px;
+}
+html .my-data-1 div select,
+body .my-data-1 div select {
+  height: 30px;
+}
+html .my-data-1 div select option,
+body .my-data-1 div select option {
+  height: 20px;
+  color: #333;
+  font-size: 12px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select,
+body .my-data-1 div .cy-myprofile-myfom-dv-select {
+  width: 77px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-1,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-1 {
+  width: 108px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-5,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-5 {
+  width: 138px;
+  height: 38px;
+  display: inline-block;
+  line-height: 38px;
+  position: relative;
+  border: 1px solid #eee;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-5 .select-xiala,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-5 .select-xiala {
+  width: 100%;
+  line-height: 37px;
+  background-position: 118px 15px;
+  position: relative;
+  font-size: 14px;
+  color: #666666;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-5 .xiala,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-5 .xiala {
+  width: 138px;
+  display: none;
+  margin-top: 8px;
+}
+html .my-data-1 div .q-1,
+body .my-data-1 div .q-1 {
+  margin-top: 8px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-4,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-4 {
+  width: 138px;
+  height: 38px;
+  line-height: 38px;
+  display: inline-block;
+  position: relative;
+  border: 1px solid #eee;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-4 .select-xiala,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-4 .select-xiala {
+  width: 100%;
+  background-image: url("../images/personcenter/select-dn.png");
+  background-position: 118px 15px;
+  position: relative;
+  font-size: 14px;
+  color: #666666;
+  line-height: 37px;
+}
+html .my-data-1 div .cy-myprofile-myfom-dv-select-4 .xiala,
+body .my-data-1 div .cy-myprofile-myfom-dv-select-4 .xiala {
+  width: 138px;
+}
+html .my-data-1 .select-xiala,
+body .my-data-1 .select-xiala {
+  line-height: 37px;
+  padding-left: 10px;
+  display: block;
+  width: 138px;
+  height: 38px;
+  background: no-repeat;
+  background-image: url("../images/personcenter/select-dn.png");
+  background-position: 118px 15px;
+  font-size: 14px;
+  position: relative;
+  color: #666666;
+}
+html .my-data-1 .xiala,
+body .my-data-1 .xiala {
+  z-index: 2;
+  background: #FFFFFF;
+  position: absolute;
+  left: 0;
+  top: 28px;
+  max-height: 120px;
+  overflow: auto;
+  border: 1px solid #eee;
+  display: none;
+}
+html .my-data-1 .xiala span,
+body .my-data-1 .xiala span {
+  max-width: 138px;
+  padding-left: 10px;
+  cursor: pointer;
+  display: block;
+  background: white;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+}
+html .my-data-1 .xiala span:hover,
+body .my-data-1 .xiala span:hover {
+  color: white;
+  background: #2cb82c;
+}
+html .my-data-1 .yearxl,
+body .my-data-1 .yearxl {
+  left: 0;
+}
+html .my-data-1 .monthxl,
+body .my-data-1 .monthxl {
+  left: 158px;
+}
+html .my-data-1 .dayxl,
+body .my-data-1 .dayxl {
+  left: 316px;
+}
+html .my-data-1 .address .address-right,
+body .my-data-1 .address .address-right {
+  position: absolute;
+  height: 30px;
+  width: 600px;
+  display: inline-block;
+  left: 377px;
+}
+html .my-data-1 .address .address-right div,
+body .my-data-1 .address .address-right div {
+  display: inline;
+  margin-top: 6px;
+}
+html .my-data-1 .address .yearxl,
+body .my-data-1 .address .yearxl {
+  left: 0;
+  top: 28px;
+}
+html .my-data-1 .address .monthxl,
+body .my-data-1 .address .monthxl {
+  left: 147px;
+  top: 31px;
+}
+html .my-data-1 .address .dayxl,
+body .my-data-1 .address .dayxl {
+  left: 296px;
+  top: 31px;
+}
+html .my-data-1 .address .select-xiala,
+body .my-data-1 .address .select-xiala {
+  float: left;
+  width: 138px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #eee;
+  margin-right: 10px;
+  background-image: url("../images/personcenter/select-dn.png");
+  position: relative;
+  background-position: 118px 15px;
+  padding-right: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+html .my-data-1 .address .select-xiala span,
+body .my-data-1 .address .select-xiala span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  width: 80px;
+}
+html .my-data-1 .address .xiala,
+body .my-data-1 .address .xiala {
+  width: 138px;
+  z-index: 2;
+  background: #FFFFFF;
+  position: absolute;
+  max-height: 130px;
+  border: 1px solid #eee;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: none;
+}
+html .my-data-1 .address .xiala span,
+body .my-data-1 .address .xiala span {
+  max-width: 138px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+}
+html .my-data-1 .address .xiala span:hover,
+body .my-data-1 .address .xiala span:hover {
+  color: white;
+  background: #2cb82c;
+}
+html .my-data-1 #birthday_container,
+body .my-data-1 #birthday_container {
+  height: 30px;
+  position: relative;
+}
+html .my-data-1 #birthday_container .birth-right,
+body .my-data-1 #birthday_container .birth-right {
+  position: absolute;
+  height: 30px;
+  width: 600px;
+  display: inline-block;
+}
+html .my-data-1 #birthday_container .birth-right div,
+body .my-data-1 #birthday_container .birth-right div {
+  display: inline;
+}
+html .my-data-1 #birthday_container .select-xiala,
+body .my-data-1 #birthday_container .select-xiala {
+  float: left;
+  width: 138px;
+  height: 38px;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #eee;
+  margin-right: 20px;
+  background-image: url("../images/personcenter/select-dn.png");
+  background-position: 118px 15px;
+  position: relative;
+}
+html .my-data-1 #birthday_container .xiala,
+body .my-data-1 #birthday_container .xiala {
+  width: 138px;
+  z-index: 2;
+  background: #FFFFFF;
+  position: absolute;
+  top: 37px;
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  display: none;
+}
+html .my-data-1 #birthday_container .xiala span,
+body .my-data-1 #birthday_container .xiala span {
+  max-width: 138px;
+  padding-left: 10px;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+}
+html .my-data-1 #birthday_container .xiala span:hover,
+body .my-data-1 #birthday_container .xiala span:hover {
+  color: white;
+  background: #2cb82c;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu2,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 {
+  margin-top: -8px;
+  margin-bottom: 3px;
+  height: 30px;
+  position: relative;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 label,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 label {
+  cursor: pointer;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 .radio-cover,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 .radio-cover {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  vertical-align: middle;
+  display: block;
+  top: 8px;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 .active,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 .active {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translate(34%, 40%);
+  -moz-transform: translate(34%, 40%);
+  -ms-transform: translate(34%, 40%);
+  -o-transform: translate(34%, 40%);
+  transform: translate(34%, 40%);
+  background-color: #2cb82c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 span,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu2 span {
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: normal;
+  /*margin-top: 10px;*/
+  margin-right: 10px;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu {
+  /* margin-top: 10px;*/
+  margin-bottom: 10px;
+  position: relative;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu label,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu label {
+  cursor: pointer;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu .radio-cover,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu .radio-cover {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  vertical-align: middle;
+  display: block;
+  top: 8px;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu .active,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu .active {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translate(34%, 40%);
+  -moz-transform: translate(34%, 40%);
+  -ms-transform: translate(34%, 40%);
+  -o-transform: translate(34%, 40%);
+  transform: translate(34%, 40%);
+  background-color: #2cb82c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+html .my-data-1 .cy-myprofile-myfom-dv-radio-zu span,
+body .my-data-1 .cy-myprofile-myfom-dv-radio-zu span {
+  font-weight: normal;
+  display: block;
+  /*margin-top: 10px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+html .my-data-1 .menpaihao,
+body .my-data-1 .menpaihao {
+  height: 74px;
+  overflow: hidden;
+  width: 377px;
+  line-height: 27px;
+  margin-top: -2px;
+  padding: 10px;
+}
+html .view-stack,
+body .view-stack {
+  display: none;
+}
+html .view-stack .buttonbar,
+body .view-stack .buttonbar {
+  /* padding: 0 0 15px;*/
+  height: 33px;
+}
+html .view-stack .buttonbar .btn3,
+body .view-stack .buttonbar .btn3 {
+  padding: 15px 0px 15px 0;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+}
+html .view-stack.full-content,
+body .view-stack.full-content {
+  padding: 0;
+}
+html .view-stack .search-item .pic-content,
+body .view-stack .search-item .pic-content {
+  width: 70px;
+  display: inline-block;
+  vertical-align: top;
+}
+html .view-stack .search-item .pic-content .pic,
+body .view-stack .search-item .pic-content .pic {
+  width: 50px;
+  height: 50px;
+}
+html .view-stack .search-item .pic-content .name,
+body .view-stack .search-item .pic-content .name {
+  color: #888888;
+  text-align: center;
+  line-height: 22px;
+  font-size: 12px;
+  margin-top: 5px;
+  padding: 0;
+}
+html .view-stack .search-item .content,
+body .view-stack .search-item .content {
+  width: 850px;
+}
+html .view-stack.view-stack-idea .control-label,
+body .view-stack.view-stack-idea .control-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+html .view-stack.view-stack-idea .icon-inser-pic,
+body .view-stack.view-stack-idea .icon-inser-pic {
+  background-image: url("../images/personcenter/innerimg.gif");
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  position: relative;
+  top: 4px;
+  margin-left: 3px;
+}
+html .view-stack.view-stack-idea .submit-msg,
+body .view-stack.view-stack-idea .submit-msg {
+  padding: 6px 43px;
+}
+html .view-stack.view-stack-idea-suc .block-center,
+body .view-stack.view-stack-idea-suc .block-center {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #cccccc;
+}
+html .view-stack.view-stack-idea-suc .block-center.pic,
+body .view-stack.view-stack-idea-suc .block-center.pic {
+  background-image: url("../images/personcenter/commits.gif");
+  width: 72px;
+  height: 48px;
+  margin-top: 100px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+html .view-stack.view-stack-idea-suc .btn-returnindex,
+body .view-stack.view-stack-idea-suc .btn-returnindex {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  margin-top: 50px;
+  color: #ffffff;
+}
+.kc {
+  display: none;
+}
+.geren,
+.kecheng {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.geren .warn,
+.kecheng .warn {
+  font-size: 12px;
+  color: #999;
+  line-height: 24px;
+  margin-top: 15px;
+}
+.geren .red,
+.kecheng .red {
+  color: red;
+  margin-top: 3px;
+  margin-right: 5px;
+}
+.geren {
+  display: block;
+}
+.kecheng {
+  display: none;
+}
+.kecheng .rq-college {
+  width: 138px;
+  height: 34px;
+  display: inline-block;
+  position: relative;
+}
+.kecheng .bue {
+  overflow: hidden;
+  line-height: 30px;
+  width: 76px;
+  text-align: right;
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+}
+.kecheng .cy-myprofile-myfom-dv-radio-zu {
+  /* margin-top: 10px;*/
+  margin-bottom: 10px;
+  position: relative;
+}
+.kecheng .cy-myprofile-myfom-dv-radio-zu .radio-cover {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  vertical-align: middle;
+  display: block;
+  top: 8px;
+}
+.kecheng .cy-myprofile-myfom-dv-radio-zu .active {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: translate(34%, 40%);
+  -moz-transform: translate(34%, 40%);
+  -ms-transform: translate(34%, 40%);
+  -o-transform: translate(34%, 40%);
+  transform: translate(34%, 40%);
+  background-color: #2cb82c;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.kecheng .cy-myprofile-myfom-dv-radio-zu span {
+  font-weight: normal;
+  display: block;
+  /*margin-top: 10px;*/
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.kecheng .address-right {
+  position: absolute;
+  height: 30px;
+  width: 600px;
+  display: inline-block;
+}
+.kecheng .address-right div {
+  display: inline;
+  margin-top: 9px;
+}
+.kecheng .yearxl {
+  left: 0;
+  top: 28px;
+}
+.kecheng .monthxl {
+  left: 158px;
+  top: 28px;
+}
+.kecheng .dayxl {
+  left: 315px;
+  top: 28px;
+}
+.kecheng p {
+  margin: 0;
+}
+.kecheng .select-xiala {
+  float: left;
+  width: 138px;
+  height: 38px;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #eee;
+  margin-right: 20px;
+  background-image: url("../images/personcenter/select-dn.png");
+  position: relative;
+  background-position: 118px 15px;
+  padding-right: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.kecheng .select-xiala span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+.kecheng .xiala {
+  width: 138px;
+  z-index: 2;
+  background: #FFFFFF;
+  position: absolute;
+  max-height: 130px;
+  overflow: auto;
+  border: 1px solid #eee;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: none;
+}
+.kecheng .xiala span {
+  max-width: 138px;
+  padding-left: 10px;
+  padding-right: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  color: #333;
+  font-size: 14px;
+}
+.kecheng .xiala span:hover {
+  color: white;
+  background: #2cb82c;
+}
+.select-xiala img {
+  position: absolute;
+  right: 6px;
+  top: 5px;
+}
+.warning {
+  display: none;
+  font-size: 14px;
+  color: #FF4012;
+  line-height: 30px;
+  text-indent: 20px;
+  background: url(../images/icons/tanhao.png) no-repeat left center;
+  margin-left: 10px;
+}
+#personMess .ideaSure {
+  margin-left: 60px;
+}
+.my-data-1 .q-1 {
+  left: -1px !important;
+}
+.my-data-1 #rq_college {
+  width: 160px;
+  background-position: 140px 15px;
+}
+.my-data-1 #rqdxxl {
+  width: 160px;
+  max-height: 170px;
+}
+.my-data-1 #rqdxxl span {
+  max-width: 160px;
+}

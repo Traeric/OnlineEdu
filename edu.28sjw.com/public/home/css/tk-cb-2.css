@@ -1,0 +1,31 @@
+.end-div{position: relative;height: 139px;border: 1px solid #ebebeb;background: #f7f7f7;}
+.end-div h5{font-size:18px;}
+.end-div a.more-st{display: block;width: 190px;margin-top: 15px;height: 40px;color: #fff;text-align: center;line-height: 40px;border-radius: 5px;background: #f74545 url(../img/txt1.png) no-repeat 35px 50%}
+
+
+.end-div .pinfen{position: relative; width:120px;height:100px;background:url(../img/xp.png) no-repeat;margin-top:20px;}
+.end-div .pinfen span{position: absolute; left:27px; bottom:7px;color:#fff;}
+
+
+.end-dn{padding: 0 20px;border: 1px solid #ebebeb;}
+h3.datika{height: 48px;line-height:48px;border: 1px solid #ebebeb;padding-left: 20px;border-width: 1px 1px 0;}
+h3.datika span{font-size: 14px; font-style: normal;font-weight: normal;margin-right: 45px;}
+h3.datika i{display: inline-block; vertical-align: sub; width: 15px;height: 15px;border: 1px solid #ddd;margin-right: 5px;border-radius:3px;}
+h3.datika i.icolv{border: 1px solid #13bd5a;}
+h3.datika i.icored{border: 1px solid #ff0002;}
+
+.end-dn ul li{margin: 30px 0;}
+.end-dn ul li h3{font-size: 14px;font-weight: normal;margin-bottom: 15px;}
+.end-dn ul li a{display: inline-block;width: 29px;height: 29px;border: 1px solid #ff191b;color: #ff191b;text-align: center;line-height: 29px;margin-right: 22px;border-radius: 3px;}
+.end-dn ul li a.lv{border: 1px solid #13bd5a;color: #13bd5a;}
+.end-dn ul li a.da{border: 1px solid #dadada;color: #333}
+
+.daan-detail{border: 1px solid #ebebeb;}
+.daan-detail h3{border-width: 0 0 1px}
+.table-daan table{width: 100%;}
+.table-daan{width: 1108px;margin: 20px auto;border: 1px solid #ededed;}
+.table-daan thead{height: 38px;line-height: 38px;background: #edf8ff;}
+.table-daan thead tr th{font-weight: normal;}
+.table-daan tbody tr{height: 38px;line-height: 38px;border-bottom: 1px solid #ededed;}
+.table-daan tbody tr:last-child{border-bottom: none;}
+.table-daan tbody tr td.rxin{padding-left: 15px;background: url(../img/red5xin.png) no-repeat 30px 50%;}

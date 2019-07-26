@@ -68,3 +68,15 @@ Route::group([
     Route::post('/stream/add', 'Admin\StreamController@add')->name('stream_add');
 });
 
+// 前台路由
+Route::get('/', 'Home\IndexController@index')->name('home_index');   // 前台首页
+
+// 直播路由
+Route::get('/home/live/player', 'Home\LiveController@player')->name('live_player');
+
+// 专业详情展示页面
+Route::get('/home/profession/detail', 'Home\ProfessionController@detail')->name('profession_detail');
+// 专业购买页面
+Route::get('/home/profession/makeOrder', 'Home\ProfessionController@makeOrder');
+Route::get('/home/profession/pay', 'Home\ProfessionController@pay');
+

@@ -1,0 +1,339 @@
+@charset "utf-8";
+html .mask,
+body .mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=20);
+    /*ie*/
+    -moz-opacity: 0.2;
+    -o-opacity: 0.2;
+    -webkit-opacity: 0.2;
+    opacity: 0.2;
+    /*display: block;*/
+    display: none;
+    overflow: hidden;
+}
+
+#headImg {
+    z-index: 99999;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    margin-left: -270px;
+    width: 510px;
+    background: #fff;
+    /*background: red;*/
+    /*display: block;*/
+    display: none;
+}
+
+.container {
+    width: 510px;
+    position: relative;
+    font-family: 微软雅黑;
+    font-size: 12px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.container .img-title {
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.container .img-title p {
+    line-height: 30px;
+    display: inline-block;
+    color: #333;
+    margin-top: 15px;
+}
+
+.container .img-title i {
+    float: right;
+    margin-top: 15px;;
+    margin-right:40px;
+    cursor: pointer;
+    color:#ccc;
+    font-size:14px;
+}
+
+.action {
+    width: 400px;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.cropped {
+    position: absolute;
+    right: 40px;
+    top: 60px;
+    width: 120px;
+    height: 328px;
+    padding: 4px;
+    text-align: center;
+    padding-top: 17px;
+    font-size: 14px;
+    color: #666;
+    background: #f8f8f8;
+    /*.cropTitle {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        margin-top: 10px;
+    }*/
+}
+.cropTitle{
+    font-size:16px;
+    color:#333;
+}
+
+
+.imageBox {
+    position: relative;
+    height: 330px;
+    width: 330px;
+    background: #F8F8F8;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    cursor: move;
+    margin-top: 15px;
+    text-align: center;
+    display: none;
+}
+
+.img-box1 {
+    display: block;
+    position: relative;
+    height: 328px;
+    width: 330px;
+    background: #F8F8F8;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.img-box1 .upload-img {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+    color: #333;
+    color: #EEEEEE;
+    line-height: 28px;
+    margin-top: 170px;
+    cursor: pointer;
+}
+
+.img-box1 .upload-img p {
+    width: 80px;
+    margin-top: 0;
+    height: 28px;
+    line-height: 28px;
+    background: white;
+    color: #333;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.img-box1 .upload-img p span {
+    color: #2CB82C;
+    font-size: 20px;
+    line-height: 22px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.imageBox .thumbBox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px;
+    border-radius: 200px;
+    margin-left: -100px;
+    box-sizing: border-box;
+    border: 1px solid rgb(102, 102, 102);
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    background: none repeat scroll 0% 0% transparent;
+}
+
+.imageBox .spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    line-height: 400px;
+    color: #2F2A2A;
+    background: rgba(213, 211, 211, 0.7);
+}
+
+.Btnsty_peyton {
+    float: right;
+    width: 66px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 57px;
+    line-height: 57px;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin: 0px 2px;
+    background-color: #f38e81;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #B0B0B0;
+    border: 0px #fff solid;
+}
+
+/*选择文件上传*/
+
+.new-contentarea {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    float: left;
+    height: 30px;
+}
+
+.new-contentarea p {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.new-contentarea input[type=file] {
+    width: 0px;
+    height: 0px;
+    background: #333;
+    margin: 0 auto;
+    position: absolute;
+    right: 500%;
+    margin-right: -94px;
+    top: 0;
+    right /*\**/: 0px \9;
+    margin-right /*\**/: 0px \9;
+    width /*\**/: 10px \9;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    z-index: -1;
+}
+
+.action .reclick {
+    width: 64px;
+    height: 28px;
+    background: white;
+    border: 1px solid #EEEEEE;
+    float: right;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.action .reclick p {
+	position: absolute;
+	z-index: 100;
+    background: white;
+    color: #333;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    font-weight: normal;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.action .reclick p:hover{
+	color: #2CB82C;
+	border-color:#2cb82c;
+}
+.bbox {
+    width: 330px;
+    height: 28px;
+    position: relative;
+}
+.bbox input{
+	position: absolute;
+	left: -4000px;
+	top: -2000px;
+}
+.bbox span{
+	line-height: 30px;
+	float: left;
+}
+a.upload-img {
+    width: 165px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 57px;
+    line-height: 57px;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #f38e81;
+    border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px #fff solid;
+}
+
+a.upload-img:hover {
+    border-color: #2CB82C;
+}
+
+.tc {
+    text-align: center;
+    display: none;
+}
+
+.bbtn {
+    display: block;
+    float: left;
+    width: 68px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.btn-upload {
+    color: white;
+    background: #2CB82C;
+    border: 1px solid #2CB82C;
+    margin-left: 150px;
+    cursor: pointer;
+}
+
+.btn-upload:hover {
+    color: white;
+    background: #28a528;
+}
+
+.action .btn-quit {
+    color: #333;
+    background: white;
+    border: 1px solid #eee;
+    margin-left: 40px;
+}
+
+.action .btn-quit:hover {
+    border: 1px solid #28a528;
+    color: #28a528;
+}
